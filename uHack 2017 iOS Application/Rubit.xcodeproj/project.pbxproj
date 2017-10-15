@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C057A77252C3BC108696A75 /* Pods_Rubit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7540810B71A1FCC6E35F69FD /* Pods_Rubit.framework */; };
+		951AF7121F649F640090D449 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951AF7111F649F640090D449 /* PaymentViewController.swift */; };
+		9525BF6C1F640F0200DA2D9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9525BF6B1F640EE100DA2D9B /* GoogleService-Info.plist */; };
+		9525BF6E1F64538D00DA2D9B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525BF6D1F64538D00DA2D9B /* DashboardViewController.swift */; };
+		9525BF701F64539D00DA2D9B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525BF6F1F64539D00DA2D9B /* ProfileViewController.swift */; };
+		9525BF721F6453AA00DA2D9B /* PassbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525BF711F6453AA00DA2D9B /* PassbookViewController.swift */; };
+		95C445CB1F63DFE8004B4AD7 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C445CA1F63DFE8004B4AD7 /* RippleEffect.swift */; };
+		95E7BCF41F63CDC600ECB339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7BCF31F63CDC600ECB339 /* AppDelegate.swift */; };
+		95E7BCF61F63CDC600ECB339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7BCF51F63CDC600ECB339 /* ViewController.swift */; };
+		95E7BCF91F63CDC600ECB339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E7BCF71F63CDC600ECB339 /* Main.storyboard */; };
+		95E7BCFB1F63CDC600ECB339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E7BCFA1F63CDC600ECB339 /* Assets.xcassets */; };
+		95E7BCFE1F63CDC600ECB339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E7BCFC1F63CDC600ECB339 /* LaunchScreen.storyboard */; };
+		95E7BD081F63D0B500ECB339 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E7BD061F63D0B500ECB339 /* Abel-Regular.ttf */; };
+		95E7BD091F63D0B500ECB339 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95E7BD071F63D0B500ECB339 /* OFL.txt */; };
+		95E9B17D1F63EB6000E67069 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B17C1F63EB6000E67069 /* LoginViewController.swift */; };
+		95E9B17F1F63EB6B00E67069 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B17E1F63EB6B00E67069 /* SignUpViewController.swift */; };
+		95E9B18B1F63FDA200E67069 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1811F63FC6C00E67069 /* QRCodeReader.swift */; };
+		95E9B18C1F63FDA500E67069 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1821F63FC6C00E67069 /* QRCodeReaderResult.swift */; };
+		95E9B18D1F63FDA800E67069 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1831F63FC6C00E67069 /* QRCodeReaderView.swift */; };
+		95E9B18E1F63FDAA00E67069 /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1841F63FC6C00E67069 /* QRCodeReaderViewContainer.swift */; };
+		95E9B18F1F63FDAD00E67069 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1851F63FC6C00E67069 /* QRCodeReaderViewController.swift */; };
+		95E9B1901F63FDAF00E67069 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1861F63FC6C00E67069 /* QRCodeReaderViewControllerBuilder.swift */; };
+		95E9B1911F63FDB100E67069 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1871F63FC6C00E67069 /* QRCodeReaderViewControllerDelegate.swift */; };
+		95E9B1921F63FDB400E67069 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1881F63FC6C00E67069 /* ReaderOverlayView.swift */; };
+		95E9B1931F63FDB600E67069 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B1891F63FC6C00E67069 /* SwitchCameraButton.swift */; };
+		95E9B1941F63FDB900E67069 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9B18A1F63FC6C00E67069 /* ToggleTorchButton.swift */; };
+		95F7B5D81F64556800C09B69 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F7B5D71F64556800C09B69 /* SettingsViewController.swift */; };
+		95F7B5DA1F64558000C09B69 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F7B5D91F64558000C09B69 /* Constants.swift */; };
+		95F7B5E91F647B4C00C09B69 /* PassbookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F7B5E81F647B4C00C09B69 /* PassbookTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		469145CCD68FBD0003C14EE2 /* Pods-Rubit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rubit/Pods-Rubit.debug.xcconfig"; sourceTree = "<group>"; };
+		7540810B71A1FCC6E35F69FD /* Pods_Rubit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rubit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943D83CCE80C0A6DC8E42081 /* Pods-Rubit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rubit/Pods-Rubit.release.xcconfig"; sourceTree = "<group>"; };
+		951AF7111F649F640090D449 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		9525BF6B1F640EE100DA2D9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9525BF6D1F64538D00DA2D9B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		9525BF6F1F64539D00DA2D9B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9525BF711F6453AA00DA2D9B /* PassbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassbookViewController.swift; sourceTree = "<group>"; };
+		95C445CA1F63DFE8004B4AD7 /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
+		95E7BCF01F63CDC600ECB339 /* Rubit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E7BCF31F63CDC600ECB339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95E7BCF51F63CDC600ECB339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E7BCF81F63CDC600ECB339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95E7BCFA1F63CDC600ECB339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E7BCFD1F63CDC600ECB339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95E7BCFF1F63CDC600ECB339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E7BD061F63D0B500ECB339 /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
+		95E7BD071F63D0B500ECB339 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		95E9B17C1F63EB6000E67069 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		95E9B17E1F63EB6B00E67069 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		95E9B1811F63FC6C00E67069 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		95E9B1821F63FC6C00E67069 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		95E9B1831F63FC6C00E67069 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		95E9B1841F63FC6C00E67069 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		95E9B1851F63FC6C00E67069 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		95E9B1861F63FC6C00E67069 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		95E9B1871F63FC6C00E67069 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		95E9B1881F63FC6C00E67069 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		95E9B1891F63FC6C00E67069 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		95E9B18A1F63FC6C00E67069 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		95F7B5D71F64556800C09B69 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		95F7B5D91F64558000C09B69 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95F7B5DC1F645ACB00C09B69 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
+		95F7B5DD1F645ACB00C09B69 /* SFText-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-BoldItalic.otf"; sourceTree = "<group>"; };
+		95F7B5DE1F645ACB00C09B69 /* SFText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Heavy.otf"; sourceTree = "<group>"; };
+		95F7B5DF1F645ACB00C09B69 /* SFText-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-HeavyItalic.otf"; sourceTree = "<group>"; };
+		95F7B5E01F645ACB00C09B69 /* SFText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Light.otf"; sourceTree = "<group>"; };
+		95F7B5E11F645ACB00C09B69 /* SFText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-LightItalic.otf"; sourceTree = "<group>"; };
+		95F7B5E21F645ACB00C09B69 /* SFText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Medium.otf"; sourceTree = "<group>"; };
+		95F7B5E31F645ACB00C09B69 /* SFText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-MediumItalic.otf"; sourceTree = "<group>"; };
+		95F7B5E41F645ACB00C09B69 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
+		95F7B5E51F645ACB00C09B69 /* SFText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-RegularItalic.otf"; sourceTree = "<group>"; };
+		95F7B5E61F645ACB00C09B69 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
+		95F7B5E71F645ACB00C09B69 /* SFText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		95F7B5E81F647B4C00C09B69 /* PassbookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassbookTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95E7BCED1F63CDC600ECB339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C057A77252C3BC108696A75 /* Pods_Rubit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26A1EE5AA53BFF0EB2CD56D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				469145CCD68FBD0003C14EE2 /* Pods-Rubit.debug.xcconfig */,
+				943D83CCE80C0A6DC8E42081 /* Pods-Rubit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95E7BCE71F63CDC600ECB339 = {
+			isa = PBXGroup;
+			children = (
+				95E7BCF21F63CDC600ECB339 /* Rubit */,
+				95E7BCF11F63CDC600ECB339 /* Products */,
+				26A1EE5AA53BFF0EB2CD56D0 /* Pods */,
+				C4D863A87A0829B41AC770B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95E7BCF11F63CDC600ECB339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95E7BCF01F63CDC600ECB339 /* Rubit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95E7BCF21F63CDC600ECB339 /* Rubit */ = {
+			isa = PBXGroup;
+			children = (
+				95E9B1801F63FC6C00E67069 /* QR reader */,
+				95E7BCF31F63CDC600ECB339 /* AppDelegate.swift */,
+				95E7BCF51F63CDC600ECB339 /* ViewController.swift */,
+				95F7B5DB1F645ACB00C09B69 /* Font */,
+				95E7BCF71F63CDC600ECB339 /* Main.storyboard */,
+				95E7BD051F63D0B500ECB339 /* Abel */,
+				95E7BCFA1F63CDC600ECB339 /* Assets.xcassets */,
+				95E7BCFC1F63CDC600ECB339 /* LaunchScreen.storyboard */,
+				95E7BCFF1F63CDC600ECB339 /* Info.plist */,
+				95C445CA1F63DFE8004B4AD7 /* RippleEffect.swift */,
+				95E9B17C1F63EB6000E67069 /* LoginViewController.swift */,
+				95E9B17E1F63EB6B00E67069 /* SignUpViewController.swift */,
+				9525BF6D1F64538D00DA2D9B /* DashboardViewController.swift */,
+				9525BF6F1F64539D00DA2D9B /* ProfileViewController.swift */,
+				9525BF711F6453AA00DA2D9B /* PassbookViewController.swift */,
+				95F7B5E81F647B4C00C09B69 /* PassbookTableViewCell.swift */,
+				95F7B5D71F64556800C09B69 /* SettingsViewController.swift */,
+				95F7B5D91F64558000C09B69 /* Constants.swift */,
+				951AF7111F649F640090D449 /* PaymentViewController.swift */,
+				9525BF6B1F640EE100DA2D9B /* GoogleService-Info.plist */,
+			);
+			path = Rubit;
+			sourceTree = "<group>";
+		};
+		95E7BD051F63D0B500ECB339 /* Abel */ = {
+			isa = PBXGroup;
+			children = (
+				95E7BD061F63D0B500ECB339 /* Abel-Regular.ttf */,
+				95E7BD071F63D0B500ECB339 /* OFL.txt */,
+			);
+			path = Abel;
+			sourceTree = "<group>";
+		};
+		95E9B1801F63FC6C00E67069 /* QR reader */ = {
+			isa = PBXGroup;
+			children = (
+				95E9B1811F63FC6C00E67069 /* QRCodeReader.swift */,
+				95E9B1821F63FC6C00E67069 /* QRCodeReaderResult.swift */,
+				95E9B1831F63FC6C00E67069 /* QRCodeReaderView.swift */,
+				95E9B1841F63FC6C00E67069 /* QRCodeReaderViewContainer.swift */,
+				95E9B1851F63FC6C00E67069 /* QRCodeReaderViewController.swift */,
+				95E9B1861F63FC6C00E67069 /* QRCodeReaderViewControllerBuilder.swift */,
+				95E9B1871F63FC6C00E67069 /* QRCodeReaderViewControllerDelegate.swift */,
+				95E9B1881F63FC6C00E67069 /* ReaderOverlayView.swift */,
+				95E9B1891F63FC6C00E67069 /* SwitchCameraButton.swift */,
+				95E9B18A1F63FC6C00E67069 /* ToggleTorchButton.swift */,
+			);
+			path = "QR reader";
+			sourceTree = "<group>";
+		};
+		95F7B5DB1F645ACB00C09B69 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				95F7B5DC1F645ACB00C09B69 /* SFText-Bold.otf */,
+				95F7B5DD1F645ACB00C09B69 /* SFText-BoldItalic.otf */,
+				95F7B5DE1F645ACB00C09B69 /* SFText-Heavy.otf */,
+				95F7B5DF1F645ACB00C09B69 /* SFText-HeavyItalic.otf */,
+				95F7B5E01F645ACB00C09B69 /* SFText-Light.otf */,
+				95F7B5E11F645ACB00C09B69 /* SFText-LightItalic.otf */,
+				95F7B5E21F645ACB00C09B69 /* SFText-Medium.otf */,
+				95F7B5E31F645ACB00C09B69 /* SFText-MediumItalic.otf */,
+				95F7B5E41F645ACB00C09B69 /* SFText-Regular.otf */,
+				95F7B5E51F645ACB00C09B69 /* SFText-RegularItalic.otf */,
+				95F7B5E61F645ACB00C09B69 /* SFText-Semibold.otf */,
+				95F7B5E71F645ACB00C09B69 /* SFText-SemiboldItalic.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C4D863A87A0829B41AC770B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7540810B71A1FCC6E35F69FD /* Pods_Rubit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95E7BCEF1F63CDC600ECB339 /* Rubit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E7BD021F63CDC600ECB339 /* Build configuration list for PBXNativeTarget "Rubit" */;
+			buildPhases = (
+				40C0E057C86F2A52B88FD245 /* [CP] Check Pods Manifest.lock */,
+				95E7BCEC1F63CDC600ECB339 /* Sources */,
+				95E7BCED1F63CDC600ECB339 /* Frameworks */,
+				95E7BCEE1F63CDC600ECB339 /* Resources */,
+				38F9701D82EB392A07F7C57C /* [CP] Embed Pods Frameworks */,
+				5B0189495CA733E0823C8A2A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rubit;
+			productName = Rubit;
+			productReference = 95E7BCF01F63CDC600ECB339 /* Rubit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95E7BCE81F63CDC600ECB339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Saransh Mittal";
+				TargetAttributes = {
+					95E7BCEF1F63CDC600ECB339 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95E7BCEB1F63CDC600ECB339 /* Build configuration list for PBXProject "Rubit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95E7BCE71F63CDC600ECB339;
+			productRefGroup = 95E7BCF11F63CDC600ECB339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95E7BCEF1F63CDC600ECB339 /* Rubit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E7BCEE1F63CDC600ECB339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E7BD091F63D0B500ECB339 /* OFL.txt in Resources */,
+				95E7BCFE1F63CDC600ECB339 /* LaunchScreen.storyboard in Resources */,
+				95E7BCFB1F63CDC600ECB339 /* Assets.xcassets in Resources */,
+				95E7BCF91F63CDC600ECB339 /* Main.storyboard in Resources */,
+				95E7BD081F63D0B500ECB339 /* Abel-Regular.ttf in Resources */,
+				9525BF6C1F640F0200DA2D9B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F9701D82EB392A07F7C57C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rubit/Pods-Rubit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C0E057C86F2A52B88FD245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0189495CA733E0823C8A2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rubit/Pods-Rubit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95E7BCEC1F63CDC600ECB339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E9B1941F63FDB900E67069 /* ToggleTorchButton.swift in Sources */,
+				95E9B17D1F63EB6000E67069 /* LoginViewController.swift in Sources */,
+				95C445CB1F63DFE8004B4AD7 /* RippleEffect.swift in Sources */,
+				95F7B5D81F64556800C09B69 /* SettingsViewController.swift in Sources */,
+				95E9B18E1F63FDAA00E67069 /* QRCodeReaderViewContainer.swift in Sources */,
+				95F7B5E91F647B4C00C09B69 /* PassbookTableViewCell.swift in Sources */,
+				95E7BCF61F63CDC600ECB339 /* ViewController.swift in Sources */,
+				95E9B18C1F63FDA500E67069 /* QRCodeReaderResult.swift in Sources */,
+				9525BF701F64539D00DA2D9B /* ProfileViewController.swift in Sources */,
+				95E7BCF41F63CDC600ECB339 /* AppDelegate.swift in Sources */,
+				95E9B18F1F63FDAD00E67069 /* QRCodeReaderViewController.swift in Sources */,
+				95E9B18D1F63FDA800E67069 /* QRCodeReaderView.swift in Sources */,
+				95F7B5DA1F64558000C09B69 /* Constants.swift in Sources */,
+				95E9B1931F63FDB600E67069 /* SwitchCameraButton.swift in Sources */,
+				95E9B1901F63FDAF00E67069 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				95E9B18B1F63FDA200E67069 /* QRCodeReader.swift in Sources */,
+				9525BF721F6453AA00DA2D9B /* PassbookViewController.swift in Sources */,
+				95E9B1921F63FDB400E67069 /* ReaderOverlayView.swift in Sources */,
+				95E9B1911F63FDB100E67069 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
+				95E9B17F1F63EB6B00E67069 /* SignUpViewController.swift in Sources */,
+				9525BF6E1F64538D00DA2D9B /* DashboardViewController.swift in Sources */,
+				951AF7121F649F640090D449 /* PaymentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95E7BCF71F63CDC600ECB339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E7BCF81F63CDC600ECB339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95E7BCFC1F63CDC600ECB339 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E7BCFD1F63CDC600ECB339 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95E7BD001F63CDC600ECB339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95E7BD011F63CDC600ECB339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95E7BD031F63CDC600ECB339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469145CCD68FBD0003C14EE2 /* Pods-Rubit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				INFOPLIST_FILE = Rubit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.Rubit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95E7BD041F63CDC600ECB339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943D83CCE80C0A6DC8E42081 /* Pods-Rubit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				INFOPLIST_FILE = Rubit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.Rubit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95E7BCEB1F63CDC600ECB339 /* Build configuration list for PBXProject "Rubit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E7BD001F63CDC600ECB339 /* Debug */,
+				95E7BD011F63CDC600ECB339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E7BD021F63CDC600ECB339 /* Build configuration list for PBXNativeTarget "Rubit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E7BD031F63CDC600ECB339 /* Debug */,
+				95E7BD041F63CDC600ECB339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95E7BCE81F63CDC600ECB339 /* Project object */;
+}
