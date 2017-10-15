@@ -1,0 +1,759 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from blockchain.info/api/api_receive by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:29:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Blockchain Receive Payments API: Accept Bitcoin Payments - Blockchain</title>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" href="../Resources/overrides.min61d9.css?fa5a143c72f14f3f"><script src="../Resources/js/jquery.min.js" type="text/javascript"></script><script type="text/javascript" src="../Resources/js/bootstrap.min61d9.js?fa5a143c72f14f3f"></script><script src="../Resources/js/shared.min61d9.js?fa5a143c72f14f3f" type="text/javascript"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script src='../Resources/analytics.js'></script>
+<script src='../Resources/js/navbar-analytics61d9.js?fa5a143c72f14f3f'></script>
+<link rel="stylesheet" href="../Resources/css/blockchain61d9.css?fa5a143c72f14f3f">
+
+
+    <link rel="alternate" hreflang="en" href="api_receive.html">
+    
+        
+            <link rel="alternate" hreflang="id" href="../id/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ms" href="../ms/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="da" href="../da/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="de" href="../de/api/api_receive.html">
+        
+    
+        
+    
+        
+            <link rel="alternate" hreflang="es" href="../es/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fr" href="../fr/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="it" href="../it/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hu" href="../hu/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="nl" href="../nl/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="no" href="../no/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pl" href="../pl/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pt" href="../pt/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ro" href="../ro/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sl" href="../sl/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fi" href="../fi/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sv" href="../sv/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="vi" href="../vi/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="tr" href="../tr/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="el" href="../el/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ru" href="../ru/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="bg" href="../bg/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hi" href="../hi/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="th" href="../th/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-cn" href="../zh-cn/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-tw" href="../zh-tw/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ja" href="../ja/api/api_receive.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ko" href="../ko/api/api_receive.html">
+        
+    
+
+
+    <link href="../Resources/google-code-prettify/prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../Resources/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="../Resources/js/api-merchant-receive.js"></script>
+    <script type="text/javascript" src="../Resources/js/pretty-print.js"></script>
+    <meta name="description" content="Accept bitcoin payments with the Blockchain API. Get set up with our Receive Payments API and start accepting Bitcoin payments today.">
+</head>
+<body class="opaque-nav">
+
+
+  <nav role="navigation">
+    <ul class="igation">
+      <li>
+        <a class="bc-logo" href="https://www.blockchain.com/">
+          <img src="../Resources/white-blockchain61d9.svg?fa5a143c72f14f3f" alt="Bitcoin block explorer and currency statistics" />
+        </a>
+        <button class="menu-button">
+          <span></span>
+        </button>
+        <button class="search-button" type="button"></button>
+      </li>
+      <li class="with-children">
+        <a href="../wallet/%23/index.html" id="wallet-link">Wallet</a>
+        <ul>
+          <li><a href="../wallet/%23/index.html#/login">Login</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../index.html">Data</a>
+        <ul>
+          <li><a href="../charts.html">Charts</a></li>
+          <li><a href="../stats.html">Stats</a></li>
+          <li><a href="../markets/index.html">Markets</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../api.html">API</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/enterprise">Business</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/about">About</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/team">Team</a></li>
+          <li><a href="https://www.blockchain.com/careers">Careers</a></li>
+          <li><a href="https://www.blockchain.com/press">Press</a></li>
+          <li><a href="https://blog.blockchain.com/">Blog</a></li>
+        </ul>
+      </li>
+      <li class="flex-space"></li>
+      <li>
+        <form action="https://blockchain.info/search" class="search-form" method="GET">
+          <input class="search-bar" name="search" placeholder="block, hash, transaction, etc..." type="text" />
+        </form>
+      </li>
+      <li>
+        <a class="wallet-button" href="../wallet/%23/index.html#/signup" target="_blank">Get A Free Wallet</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+
+<div class="container pt-90">
+    <div class="page-header">
+        <h1>
+            Receive Payments API V2
+            <small>Accept bitcoin payments seamlessly</small>
+        </h1>
+    </div>
+    <blockquote class="padded">
+        <p>
+            You provide an extended public key (xPub) and we generate a unique, unused corresponding address for your customers to send payment to. We notify you of payments to that address instantly using a callback URL of your choosing.
+        </p>
+    </blockquote>
+    <h2 class="page-header">Introduction</h2>
+    <p>The Blockchain Receive Payments API V2 is the quickest and easiest way to begin accepting automated bitcoin payments. Consisting of just a simple HTTP GET request, you can be up and running in minutes.</p>
+    <p>
+        One of the difficulties involved with receiving bitcoin payments is the need to generate a unique address for each
+        new user or invoice. These addresses need to monitored and stored securely. The blockchain receive payments API
+        takes care of the generation and monitoring of addresses. We will notify your server using a simple callback
+        whenever a payment is received.
+    </p>
+    <h2 class="page-header">Requesting an API key
+        <small>Get access to Blockchain.info APIs</small>
+    </h2>
+    <p>In order to use the Receive Payments API V2, please apply for an API key at <a href="https://api.blockchain.info/v2/apikey/request/">https://api.blockchain.info/v2/apikey/request/</a>. This API key is only for our Receive Payments API. You cannot use the standard blockchain wallet API key for Receive Payments V2, and vice versa.</p>
+    <h2 class="page-header">Obtaining an Extended Public Key (xPub)
+        <small>xPubs can be created with our new Blockchain Wallet</small>
+    </h2>
+    <p>This API requires you to have a BIP 32 account xPub in order to receive payments. The easiest way to start receiving payments is to open a Blockchain Wallet at <a href="../wallet/%23/index.html#/signup">https://blockchain.info/wallet/#/signup</a>. You should create a new account inside your wallet exclusively for transactions facilitated by this API. When making API calls, use the xPub for this account (<b>located in Settings -> Addresses -> Manage -> More Options -> Show xPub</b>).</p>
+    <h2 class="page-header">Generating a Receiving Address [GET]
+        <small>Provide unique, unused bitcoin addresses to your customers</small>
+    </h2>
+    <p>This method creates a unique address which should be presented to the customer. For any payments sent to this address, you will be sent an HTTP notification. Please note that every call to the server will increment the `index` parameter. This is done so you do not show the same address to two different customers. However, all funds will still show within the same account.</p>
+    <p>
+        <b>https://api.blockchain.info/v2/receive?xpub=$xpub&callback=$callback_url&key=$key</b>
+    </p>
+    <p>As defined in BIP 44, wallet software will not scan past 20 unused addresses. Given enough
+       requests from this API that don't have a matching payment, you could generate addresses past
+       this horizon, which would make spending funds paid to those addresses quite difficult. For
+       this reason, this API will return an error and refuse to generate new addresses if it detects
+       it would create a gap of over 20 unused addresses. <b>If you encounter this error, you will either need to switch to a new xPub (within the same wallet is fine), or receive a payment to one of the previous 20 created addresses</b></p>
+    <p>You can control this behavior by optionally passing `gap_limit` as an extra
+       URL parameter. Please note, this will <b>not</b> increase the number of addresses that will be monitored by our servers. </b>Passing the `gap_limit` parameter changes the maximum allowed gap before the API will stop generating new addresses. Using this feature will require you understand the gap limitation and how to handle it (for advanced users only):</p>
+    <p>
+        <b>https://api.blockchain.info/v2/receive?xpub=$xpub&callback=$callback_url&key=$key&gap_limit=$gap_limit</b>
+    </p>
+    <ul>
+        <li><b>xpub</b> - Your xPub (where you would like the payment to be sent)</li>
+        <li><b>callback_url</b> - The callback URL to be notified when a payment is received. Remember to URL Encode the callback url when calling the create method.</li>
+        <li><b>key</b> - Your blockchain.info receive payments v2 api key. <a href="https://api.blockchain.info/v2/apikey/request/">Request an API key.</a></li>
+        <li><b>gap_limit</b> - Optional. How many unused addresses are allowed before erroring out.</li>
+    </ul>
+    <p>Derive an unused address using your xPub:</p>
+<pre class="prettyprint">
+curl "https://api.blockchain.info/v2/receive?xpub=xpub6CWiJoiwxPQni3DFbrQNHWq8kwrL2J1HuBN7zm4xKPCZRmEshc7Dojz4zMah7E4o2GEEbD6HgfG7sQid186Fw9x9akMNKw2mu1PjqacTJB2&callback=https%3A%2F%2Fmystore.com%3Finvoice_id%3D058921123&key=[yourkeyhere]"
+</pre>
+    <p>Have your customer send bitcoin to the address contained in the response:</p>
+    <h6>Response:
+        <small>200 OK, application/json</small>
+    </h6>
+<pre class="prettyprint">
+{"address":"19jJyiC6DnKyKvPg38eBE8R6yCSXLLEjqw","index":23,"callback":"https://mystore.com?invoice_id=058921123"}
+</pre>
+    <h3>PHP Example <small><a href="https://github.com/blockchain/receive-payments-demos">Full source code (PHP, Python, Ruby)</a></small></h3>
+<pre class="prettyprint">
+$secret = 'ZzsMLGKe162CfA5EcG6j';
+
+$my_xpub = '{YOUR XPUB ADDRESS}';
+$my_api_key = '{YOUR API KEY}';
+
+$my_callback_url = 'https://mystore.com?invoice_id=058921123&secret='.$secret;
+
+$root_url = 'https://api.blockchain.info/v2/receive';
+
+$parameters = 'xpub=' .$my_xpub. '&callback=' .urlencode($my_callback_url). '&key=' .$my_api_key;
+
+$response = file_get_contents($root_url . '?' . $parameters);
+
+$object = json_decode($response);
+
+echo 'Send Payment To : ' . $object->address;
+</pre>
+    <h2 class="page-header">Balance Updates [POST]
+        <small>Monitor addresses for received and spent payments</small>
+    </h2>
+    <p>This method monitors an address of your choice for received and / or spent payments. You will be sent an HTTP notification immediately when a transaction is made, and subsequently when it reaches the number of confirmations specified in the request.</p>
+    <p>You are required to specify the request's notification behaviour. Setting the behaviour to 'DELETE' will delete the request after the first relelvant notification is sent to your callback address. Setting the behaviour to 'KEEP' will send additional
+        notifications every time a transaction with the specified confirmations and operation type is sent to or from the address in the request.</p>
+    <p>Operation type is an optional parameter indicating whether the address will be monitored for received or spent transactions, or both. By default both operation types are monitored.</p>
+    <p>You may also optionally specify the number of confirmations a transaction reaches before being sent a notification. Note that you will receive a notification at 0 confirmations (i.e. immediately when the transaction is made),
+        and again when it reaches the number of confirmations specified in the request (3 confirmations by default).</p>
+    <p>
+        <b>https://api.blockchain.info/v2/receive/balance_update</b>
+    </p>
+    <ul>
+        <li><b>address</b> - The address you would like to monitor</li>
+        <li><b>callback</b> - The callback URL to be notified when a payment is received.</li>
+        <li><b>key</b> - Your blockchain.info receive payments v2 api key. <a href="https://api.blockchain.info/v2/apikey/request/">Request an API key.</a></li>
+        <li><b>onNotification</b> - The request notification behaviour ('KEEP' | 'DELETE).</li>
+        <li><b>confs</b> - Optional (Default 3). The number of confirmations the transaction needs to have before a notification is sent.</li>
+        <li><b>op</b> - Optional (Default 'ALL'). The operation type you would like to receive notifications for ('SPEND' | 'RECEIVE' | 'ALL').</li>
+    </ul>
+    <p>Monitor an address for every received payment with 5 confirmations:</p>
+<pre class="prettyprint">
+curl -H "Content-Type: text/plain" --data '{"key":"[your-key-here]","addr":"183qrMGHzMstARRh2rVoRepAd919sGgMHb","callback":"https://mystore.com?invoice_id=123","onNotification":"KEEP", "op":"RECEIVE", "confs": 5}' https://api.blockchain.info/v2/receive/balance_update
+</pre>
+    <h6>Response:
+        <small>200 OK, application/json</small>
+    </h6>
+<pre class="prettyprint">
+{
+  "id" : 70,
+  "addr" : "183qrMGHzMstARRh2rVoRepAd919sGgMHb",
+  "op" : "RECEIVE",
+  "confs" : 5,
+  "callback" : "https://mystore.com?invoice_id=123",
+  "onNotification" : "KEEP"
+}
+</pre>
+    <p>The id in the response can be used to delete the request:</p>
+<pre class="prettyprint">
+curl -X DELETE "https://api.blockchain.info/v2/receive/balance_update/70?key=[your-key-here]"
+</pre>
+    <h6>Response:
+        <small>200 OK, application/json</small>
+    </h6>
+<pre class="prettyprint">
+{ "deleted": true }
+</pre>
+    <h2 class="page-header">Block Notification [POST]
+        <small></small>
+    </h2>
+    <p>This method allows you to request callbacks when a new block of a specified height and confirmation number is added to the blockchain.</p>
+    <p>As with balance update requests, you are required to specify the request's notification behaviour to either 'KEEP' or 'DELETE'.</p>
+    <p>Height is an optional parameter indicating at which height you would like to receive a block notification - if unspecified, this will be the height of the next block to arrive.</p>
+    <p>Confs is another optional parameter indicating how many confirmations a block should have when a notification is sent.</p>
+    <p>
+        <b>https://api.blockchain.info/v2/receive/block_notification</b>
+    </p>
+    <ul>
+        <li><b>callback</b> - The callback URL to be notified when a block that matches your query is added.</li>
+        <li><b>key</b> - Your blockchain.info receive payments v2 api key. <a href="https://api.blockchain.info/v2/apikey/request/">Request an API key.</a></li>
+        <li><b>onNotification</b> - The request notification behaviour ('KEEP' | 'DELETE).</li>
+        <li><b>confs</b> - Optional (Default 1). The number of confirmations the block should have before a notification is sent.</li>
+        <li><b>height</b> - Optional (Default current chain height + 1). The height at which a notification should be sent.</li>
+    </ul>
+    <p>Request a single notification when the Bitcoin Blockchain reaches 500,000 blocks:</p>
+<pre class="prettyprint">
+curl -H "Content-Type: text/plain" --data '{"key":"[your-key-here]","height":500000,"callback":"https://mysite.com/block?request_id=1234","onNotification":"DELETE"}' https://api.blockchain.info/v2/receive/block_notification
+</pre>
+    <h6>Response:
+        <small>200 OK, application/json</small>
+    </h6>
+<pre class="prettyprint">
+{
+  "id" : 64,
+  "height" : 500000,
+  "callback" : "https://mysite.com/block?request_id=1234",
+  "confs" : 1,
+  "onNotification" : "DELETE"
+}
+</pre>
+    <p>The id in the response can be used to delete the request:</p>
+<pre class="prettyprint">
+curl -X DELETE "https://api.blockchain.info/v2/receive/block_notifcation/64?key=[your-key-here]"
+</pre>
+    <h6>Response:
+        <small>200 OK, application/json</small>
+    </h6>
+<pre class="prettyprint">
+{ "deleted": true }
+</pre>
+    <h3 class="page-header">Implementing the Callback
+        <small>Processing the callback sent from blockchain.info</small>
+    </h3>
+    <h4 class="page-header">Receive and Balance Update callbacks
+        <small></small>
+    </h4>
+    <p>Please note, the callback url is limited to 255 characters in length.</p>
+    <p>When a payment is received by a generated address, or by an address monitored by a balance update request,
+        blockchain.info will notify the callback URL you specify. For balance update callbacks and additional
+        notification will be sent once the transaction reaches the specified number of confirmations.</p>
+    <ul>
+        <li><b>transaction_hash</b> - The payment transaction hash.</li>
+        <li><b>address</b> - The destination bitcoin address (part of your xPub account).</li>
+        <li><b>confirmations</b> - The number of confirmations of this transaction.</li>
+        <li><b>value</b> - The value of the payment received (in satoshi, so divide by 100,000,000 to get the value in BTC).</li>
+        <li><b>{custom parameter}</b> - Any parameters included in the callback URL will be passed back to the callback URL in the notification. You can use this functionality to include parameters in your callback URL like invoice_id or customer_id to track which payments are associated with which of your customers.</li>
+    </ul>
+    <h4 class="page-header">Block Notification callbacks
+        <small></small>
+    </h4>
+
+    <p>A block notification is sent every time a new block is added to the blockchain, and matches the height and
+        number of confirmations set in the notification request.</p>
+    <ul>
+        <li><b>hash</b> - The block hash.</li>
+        <li><b>confirmations</b> - The number of confirmations of this block.</li>
+        <li><b>height</b> - The block height.</li>
+        <li><b>timestamp</b> - The unix timestamp indicating when the block was added.</li>
+        <li><b>size</b> - The block size in bytes.</li>
+        <li><b>{custom parameter}</b> - Any parameters included in the callback URL will be passed back to the callback URL in the notification.</li>
+    </ul>
+    <h3>PHP Example <small><a href="https://github.com/blockchain/receive-payments-demos">Full source code (PHP, Python, Ruby)</a></small></h3>
+    <p>
+        An example callback as a result of the above PHP example.
+    </p>
+<pre class="prettyprint">
+$real_secret = 'ZzsMLGKe162CfA5EcG6j';
+$invoice_id = $_GET['invoice_id']; //invoice_id is passed back to the callback URL
+$transaction_hash = $_GET['transaction_hash'];
+$value_in_satoshi = $_GET['value'];
+$value_in_btc = $value_in_satoshi / 100000000;
+
+//Commented out to test, uncomment when live
+if ($_GET['test'] == true) {
+    return;
+}
+
+try {
+  //create or open the database
+  $database = new SQLiteDatabase('db.sqlite', 0666, $error);
+} catch(Exception $e) {
+  die($error);
+}
+
+//Add the invoice to the database
+$stmt = $db->prepare("replace INTO invoice_payments (invoice_id, transaction_hash, value) values(?, ?, ?)");
+$stmt->bind_param("isd", $invoice_id, $transaction_hash, $value_in_btc);
+
+if($stmt->execute()) {
+   echo "*ok*";
+}
+</pre>
+    <h3 class="page-header">Expected Callback Response
+        <small></small>
+    </h3>
+    <p>In order to acknowledge successful processing of the callback, your server should respond with the text "*ok*" (no quotes), in plain-text, no HTML. If the server responds with anything else, or nothing, the callback will be resent again for every new block (approximately every 10 minutes) up to 1000 times (1 week). Callback domains which appear dead or never return the "*ok*" response may be blocked from the service.</p>
+    <h2 class="page-header">Check xPub address gap [GET]
+        <small></small>
+    </h2>
+    <p>Check the index gap between last address paid to and the last address generated using the using the checkgap endpoint. Use the xpub you want to check and your API key like so:</p>
+<pre class="prettyprint">
+curl "https://api.blockchain.info/v2/receive/checkgap?xpub=[yourxpubhere]]&key=[yourkeyhere]"
+</pre>
+<pre class="prettyprint">
+{"gap":2}
+</pre>
+    <h2 class="page-header">Callback Logs [GET]
+        <small>Debug outstanding payments</small>
+    </h2>
+    <p>See logs related to callback attempts using the callback_logs endpoints. Use the exact callback in question and your API key like so:</p>
+<pre class="prettyprint">
+curl "https://api.blockchain.info/v2/receive/callback_log?callback=https%3A%2F%2Fmystore.com%3Finvoice_id%3D05892112%26secret%3DZzsMLGKe162CfA5EcG6j&key=[yourkeyhere]"
+</pre>
+<pre class="prettyprint">
+ [
+   {
+       "callback": "https://mystore.com?invoice_id=058921123&secret=ZzsMLGKe162CfA5EcG6j&key=[yourkeyhere]",
+       "called_at": "2015-10-21T22:43:47Z",
+       "raw_response": "*bad*",
+       "response_code": 200
+   },
+   {
+       "callback": "http://mystore.com?invoice_id=058921123&secret=ZzsMLGKe162CfA5EcG6j&key=[yourkeyhere]",
+       "called_at": "2015-10-21T22:43:55Z",
+       "raw_response": "*bad*",
+       "response_code": 200
+   }
+  ]
+</pre>
+    <h2 class="page-header">Security
+        <small></small>
+    </h2>
+    <p>A custom secret parameter should be included in the callback URL. The secret will be passed back to the callback script when the callback is fired, and should be checked by your code for validity. This prevents someone from trying to call your servers and falsely mark an invoice as 'paid'.</p>
+    <h2 class="page-header">Currency Conversion</h2>
+    <p>
+        Use the <a href="exchange_rates_api.html">Exchange Rates API</a> to convert values in local currencies to BTC.
+        The Demo Apps below include examples of how to do this.
+    </p>
+    <p>
+        If you would like convert payments received in Bitcoin to fiat currency quickly use a bitcoin address from an
+        exchange wallet.
+    </p>
+
+    <h2 class="page-header">Double Spends & Chargebacks</h2>
+    <p>
+        A double spend occurs when a malicious user spends the same BTC twice. A payment that initial appears successful
+        could be reversed at a later date. This is counteracted by waiting for the transaction to be included in the
+        blockchain and reaching a number of confirmations. 6 confirmations is generally considered safe for high value
+        transactions.
+    </p>
+    <p>
+        Validate the transaction confirmations in the callback script by checking $_GET['confirmations'] parameter. It is
+        recommended you acknowledge the transaction at zero confirmations but only trust the transaction after one confirmation. For
+        example, if purchasing a product, we would show the order as successful at zero confirmations (the first callback, but do not echo "*ok*" yet), but only ship the
+        product when 4 or more confirmations are reached. See the PHP demo callback.php for an example.
+    </p>
+<pre class="prettyprint">
+if ($_GET['confirmations'] >= 6) {
+    //Insert into confirmed payments
+    echo '*ok*';
+} else {
+    //Insert into pending payments
+    //Don't print *ok* so the notification resent again on next confirmation
+}
+</pre>
+    <h2 class="page-header">Address Expiration</h2>
+    <p>
+        Receive addresses never expire and will continue to be monitored until an "*ok*" is received in the callback response or blockchain.info has notified the callback 1000 times.
+    </p>
+    <h2 class="page-header">Fair Usage</h2>
+    <p>
+        There is no limit to the number of receiving address which can be generated (as long as the 20 address gap limitation is met), the service is designed to monitor millions of addresses.
+    </p>
+    <p>
+        Callback domains which appear dead or never return the "*ok*" response may be blocked from the service.
+    </p>
+</div>
+
+<div class="footer pt-30 pb-25 ph-10" data-symbol-local='{"symbol":"R$","code":"BRL","symbolAppearsAfter":false,"name":"Brazil Real","local":true,"conversion":5584.90734639}' data-symbol-btc='{"symbol":"BTC","code":"BTC","symbolAppearsAfter":true,"name":"Bitcoin","local":false,"conversion":100000000.00000000}'>
+      <div class="container">
+        <div class="row upper">
+          <div class="col-md-2">
+            <a href="https://www.blockchain.com/"><img src="../Resources/bc-name-and-logo-dark-blue61d9.svg?fa5a143c72f14f3f" alt="" style="width: 150px;"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Products</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Products</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="../wallet/%23/index.html" class="blue em-300 f-12 uppercase">Wallet</a></p>
+                <p><a href="index.html" class="blue em-300 f-12 uppercase">API</a></p>
+                <p><a href="https://www.blockchain.com/enterprise" class="blue em-300 f-12 uppercase">Business</a></p>
+                <p><a href="https://www.blockchain.com/thunder" class="blue em-300 f-12 uppercase">Thunder</a></p>
+                <p><a href="https://www.blockchain.com/research" class="blue em-300 f-12 uppercase">Research</a></p>
+                <p><a href="../index.html" class="blue em-300 f-12 uppercase">Explorer</a></p>
+                <p><a href="../charts.html" class="blue em-300 f-12 uppercase">Charts</a></p>
+                <p><a href="../markets/index.html" class="blue em-300 f-12 uppercase">Markets</a></p>
+                <p><a href="../stats.html" class="blue em-300 f-12 uppercase">Stats</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 right-align info-dropdowns visible-sm visible-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="api_receive85a2.html?show_adv=true" class="ml-5 blue">Enable</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Company</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Company</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="https://www.blockchain.com/about" class="blue em-300 f-12 uppercase">About</a></p>
+                <p><a href="https://www.blockchain.com/team" class="blue em-300 f-12 uppercase">Team</a></p>
+                <p><a href="https://www.blockchain.com/careers" class="blue em-300 f-12 uppercase">Careers</a></p>
+                <p><a href="https://www.blockchain.com/interview" class="blue em-300 f-12 uppercase">Interviewing</a></p>
+                <p><a href="https://www.blockchain.com/faq" class="blue em-300 f-12 uppercase">FAQ</a></p>
+                <p><a href="https://www.blockchain.com/press" class="blue em-300 f-12 uppercase">Press</a></p>
+                <p><a href="https://blog.blockchain.com/" class="blue em-300 f-12 uppercase">Blog</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Support</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Support</span>
+              </p>
+              <p><a href="https://support.blockchain.com/" class="blue em-300 f-12 uppercase">Help Center</a></p>
+              <p><a href="https://blog.blockchain.com/category/tutorials-and-guides/" class="blue em-300 f-12 uppercase">Tutorials</a></p>
+              <p><a href="../wallet/bitcoin-faq.html" class="blue em-300 f-12 uppercase">Learning Portal</a></p>
+            </div>
+            <div class="col-md-2 right-align hidden-sm hidden-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="api_receive85a2.html?show_adv=true" class="ml-5 blue em-300">Enable</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container type-sm flex-column-reverse-mobile flex-center">
+        <div class="col-md-8 col-sm-12 col-xs-12 pln pt-15">
+          <span class="medium-blue mbn upper f-10">
+            <span class="mrm em-300 blue">2017 Blockchain Luxembourg S.A. All Rights Reserved.</span>
+            <br class="visible-xs">
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/privacy">
+              Privacy
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/terms">
+              Terms
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/legal">
+              Law Enforcement Guide
+            </a>
+            <a class="blue light-bg legal-link" href="../advertise.html">
+              Advertise
+            </a>
+          </span>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 prn pt-15 right-align">
+          <a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android&amp;hl=en" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/android-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/apple-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.facebook.com/blockchain/" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/facebook-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.linkedin.com/company/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/linkedin-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://twitter.com/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/twitter-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+
+<!-- Mirrored from blockchain.info/api/api_receive by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:29:36 GMT -->
+</html>

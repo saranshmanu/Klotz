@@ -1,0 +1,671 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from blockchain.info/api/blockchain_wallet_api by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:29:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Blockchain Wallet API: Bitcoin Wallet API - Blockchain</title>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" href="../Resources/overrides.min61d9.css?fa5a143c72f14f3f"><script src="../Resources/js/jquery.min.js" type="text/javascript"></script><script type="text/javascript" src="../Resources/js/bootstrap.min61d9.js?fa5a143c72f14f3f"></script><script src="../Resources/js/shared.min61d9.js?fa5a143c72f14f3f" type="text/javascript"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script src='../Resources/analytics.js'></script>
+<script src='../Resources/js/navbar-analytics61d9.js?fa5a143c72f14f3f'></script>
+<link rel="stylesheet" href="../Resources/css/blockchain61d9.css?fa5a143c72f14f3f">
+
+
+    <link rel="alternate" hreflang="en" href="blockchain_wallet_api.html">
+    
+        
+            <link rel="alternate" hreflang="id" href="../id/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ms" href="../ms/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="da" href="../da/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="de" href="../de/api/blockchain_wallet_api.html">
+        
+    
+        
+    
+        
+            <link rel="alternate" hreflang="es" href="../es/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fr" href="../fr/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="it" href="../it/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hu" href="../hu/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="nl" href="../nl/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="no" href="../no/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pl" href="../pl/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pt" href="../pt/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ro" href="../ro/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sl" href="../sl/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fi" href="../fi/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sv" href="../sv/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="vi" href="../vi/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="tr" href="../tr/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="el" href="../el/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ru" href="../ru/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="bg" href="../bg/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hi" href="../hi/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="th" href="../th/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-cn" href="../zh-cn/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-tw" href="../zh-tw/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ja" href="../ja/api/blockchain_wallet_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ko" href="../ko/api/blockchain_wallet_api.html">
+        
+    
+
+
+    <link href="../Resources/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../Resources/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="../Resources/js/api-blockchain-wallet.js"></script>
+    <script type="text/javascript" src="../Resources/js/pretty-print.js"></script>
+    <meta name="description" content="Allow users to send and receive bitcoin payments with the Blockchain Wallet API. Visit today to find out more.">
+</head>
+<body class="opaque-nav">
+
+
+  <nav role="navigation">
+    <ul class="igation">
+      <li>
+        <a class="bc-logo" href="https://www.blockchain.com/">
+          <img src="../Resources/white-blockchain61d9.svg?fa5a143c72f14f3f" alt="Bitcoin block explorer and currency statistics" />
+        </a>
+        <button class="menu-button">
+          <span></span>
+        </button>
+        <button class="search-button" type="button"></button>
+      </li>
+      <li class="with-children">
+        <a href="../wallet/%23/index.html" id="wallet-link">Wallet</a>
+        <ul>
+          <li><a href="../wallet/%23/index.html#/login">Login</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../index.html">Data</a>
+        <ul>
+          <li><a href="../charts.html">Charts</a></li>
+          <li><a href="../stats.html">Stats</a></li>
+          <li><a href="../markets/index.html">Markets</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../api.html">API</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/enterprise">Business</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/about">About</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/team">Team</a></li>
+          <li><a href="https://www.blockchain.com/careers">Careers</a></li>
+          <li><a href="https://www.blockchain.com/press">Press</a></li>
+          <li><a href="https://blog.blockchain.com/">Blog</a></li>
+        </ul>
+      </li>
+      <li class="flex-space"></li>
+      <li>
+        <form action="https://blockchain.info/search" class="search-form" method="GET">
+          <input class="search-bar" name="search" placeholder="block, hash, transaction, etc..." type="text" />
+        </form>
+      </li>
+      <li>
+        <a class="wallet-button" href="../wallet/%23/index.html#/signup" target="_blank">Get A Free Wallet</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+
+<div class="container pt-90">
+<div class="page-header">
+    <h1>
+        Blockchain Wallet API <small>Simple API for Blockchain Wallet users to send and receive bitcoin payments.</small>
+    </h1>
+</div>
+<p class="well">
+    The Blockchain Wallet API provides a simple interface Merchants can use to programmatically interact with their wallet.
+</p>
+<h2>Installation</h2>
+<p>
+To use this API, you will need to run small local service which be responsible for managing your Blockchain Wallet. Your application interacts with this service locally via HTTP API calls. <b><a href="https://github.com/blockchain/service-my-wallet-v3">Click here for complete setup instructions on GitHub.</a></b>
+</p>
+<div class="page-header">
+    <h3>
+        Create Wallet API <small>Create blockchain wallets programmatically</small>
+    </h3>
+    <p>
+        The create_wallet method can be used to create a new blockchain.info bitcoin wallet.
+    </p>
+    <p>
+        <b>URL:</b> http://localhost:3000/api/v2/create</br>
+        <b>Method:</b> POST or GET
+    </p>
+    <ul>
+        <li><b>$password</b> The password for the new wallet. Must be at least 10 characters in length.</li>
+        <li><b>$api_code</b> An API code with create wallets permission.</li>
+        <li><b>$priv</b> <font color="grey">A private key to add to the wallet (Wallet import format preferred). (Optional)</font></li>
+        <li><b>$label</b> <font color="grey">A label to set for the first address in the wallet. Alphanumeric only. (Optional)</font></li>
+        <li><b>$email</b> <font color="grey">An email to associate with the new wallet i.e. the email address of the user you are creating this wallet on behalf of. (Optional)</font></li>
+    </ul>
+    <p>Please create an API code <a href="https://api.blockchain.info/customer/signup">here</a> including permissions to "Create Wallets".</p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+    "guid": "4b8cd8e9-9480-44cc-b7f2-527e98ee3287",
+    "address": "12AaMuRnzw6vW6s2KPRAGeX53meTf8JbZS",
+    "label": "Main address"
+}</pre>
+</div>
+<div class="page-header">
+    <h3>Making Outgoing Payments</h3>
+    <p>
+        Send bitcoin from your wallet to another bitcoin address. All transactions include a 0.0001 BTC miners fee.
+    </p>
+    <p>
+        All bitcoin values are in Satoshi i.e. divide by 100000000 to get the amount in BTC. The Base URL for all requests: <b>https://blockchain.info/merchant/$guid/</b>. <b>$guid</b> should be replaced with your Blockchain Wallet identifier (found on the login page).
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/payment?password=$main_password&second_password=$second_password&to=$address&amount=$amount&from=$from&fee=$fee</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain Wallet password</li>
+        <li><b>$second_password</b> Your second Blockchain Wallet password if double encryption is enabled.</li>
+        <li><b>$to</b> Recipient Bitcoin Address.</li>
+        <li><b>$amount</b> Amount to send in satoshi.</li>
+        <li><b>$from</b> <font color="grey">Send from a specific Bitcoin Address (Optional)</font></li>
+        <li><b>$fee</b> <font color="grey">Transaction fee value in satoshi (Must be greater than default fee) (Optional)</font></li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{ "message" : "Response Message" , "tx_hash": "Transaction Hash", "notice" : "Additional Message" }</pre>
+    <pre class="prettyprint">{ "message" : "Sent 0.1 BTC to 1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq" , "tx_hash" : "f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c" , "notice" : "Some funds are pending confirmation and cannot be spent yet (Value 0.001 BTC)" }</pre>
+</div>
+<div class="page-header">
+    <h3>Send Many Transactions</h3>
+    <p>
+        Send a transaction to multiple recipients in the same transaction.
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/sendmany?password=$main_password&second_password=$second_password&recipients=$recipients&fee=$fee</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain wallet password</li>
+        <li><b>$second_password</b> Your second Blockchain Wallet password if double encryption is enabled.</li>
+        <li><b>$recipients</b> Is a JSON Object using Bitcoin Addresses as keys and the amounts to send as values (See below).</li>
+        <li><b>$from</b> <font color="grey">Send from a specific Bitcoin Address (Optional)</font></li>
+        <li><b>$fee</b> <font color="grey">Transaction fee value in satoshi (Must be greater than default fee) (Optional)</font></li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+    "1JzSZFs2DQke2B3S4pBxaNaMzzVZaG4Cqh": 100000000,
+    "12Cf6nCcRtKERh9cQm3Z29c9MWvQuFSxvT": 1500000000,
+    "1dice6YgEVBf88erBFra9BHf6ZMoyvG88": 200000000
+}
+</pre>
+    <p>The above example would send 1 BTC to 1JzSZFs2DQke2B3S4pBxaNaMzzVZaG4Cqh, 15 BTC to 12Cf6nCcRtKERh9cQm3Z29c9MWvQuFSxvT and 2 BTC to 1dice6YgEVBf88erBFra9BHf6ZMoyvG88 in the same transaction.</p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{ "message" : "Response Message" , "tx_hash": "Transaction Hash" }</pre>
+    <pre class="prettyprint">{ "message" : "Sent To Multiple Recipients" , "tx_hash" : "f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c" }</pre>
+</div>
+<h4>PHP Example</h4>
+<pre class="prettyprint">
+&lt;?
+
+$guid=&quot;GUID_HERE&quot;;
+$firstpassword=&quot;PASSWORD_HERE&quot;;
+$secondpassword=&quot;PASSWORD_HERE&quot;;
+$amounta = &quot;10000000&quot;;
+$amountb = &quot;400000&quot;;
+$addressa = &quot;1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq&quot;;
+$addressb = &quot;1ExD2je6UNxL5oSu6iPUhn9Ta7UrN8bjBy&quot;;
+$recipients = urlencode('{
+                  &quot;'.$addressa.'&quot;: '.$amounta.',
+                  &quot;'.$addressb.'&quot;: '.$amountb.'
+               }');
+
+$json_url = &quot;http://localhost:3000/merchant/$guid/sendmany?password=$firstpassword&amp;second_password=$secondpassword&amp;recipients=$recipients&quot;;
+
+$json_data = file_get_contents($json_url);
+
+$json_feed = json_decode($json_data);
+
+$message = $json_feed-&gt;message;
+$txid = $json_feed-&gt;tx_hash;
+
+?&gt;
+</pre>
+<div class="page-header">
+    <h3>Fetching the wallet balance</h3>
+    <p>
+        Fetch the balance of a wallet. This should be used as an estimate only and will include unconfirmed transactions and possibly double spends.
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/balance?password=$main_password</b>
+    </p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{ "balance": Wallet Balance in Satoshi }</pre>
+    <pre class="prettyprint">{ "balance": 1000}</pre>
+</div>
+<div class="page-header">
+    <h3>Listing Addresses</h3>
+    <p>
+        List all active addresses in a wallet. Also includes a 0 confirmation balance which should be used as an estimate only and will include unconfirmed transactions and possibly double spends.
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/list?password=$main_password</b>
+    </p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+    "addresses": [
+        {
+            "balance": 1400938800,
+            "address": "1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC",
+            "label": "SMS Deposits",
+            "total_received": 5954572400
+        },
+        {
+            "balance": 79434360,
+            "address": "1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq",
+            "label": "My Wallet",
+            "total_received": 453300048335
+        },
+        {
+            "balance": 0,
+            "address": "17p49XUC2fw4Fn53WjZqYAm4APKqhNPEkY",
+            "total_received": 0
+        }
+    ]
+}
+</pre>
+</div>
+<div class="page-header">
+    <h3>Getting the balance of an address</h3>
+    <p>
+        Retrieve the balance of a bitcoin address. <small>Querying the balance of an address by label is depreciated.</small>
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/address_balance?password=$main_password&address=$address</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain wallet password</li>
+        <li><b>$address</b> The bitcoin address to lookup</li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{"balance" : Balance in Satoshi ,"address": "Bitcoin Address", "total_received" : Total Satoshi Received}</pre>
+    <pre class="prettyprint">{"balance" : 50000000, "address" : "19r7jAbPDtfTKQ9VJpvDzFFxCjUJFKesVZ", "total_received" : 100000000}</pre>
+</div>
+<div class="page-header">
+    <h3>Generating a new address</h3>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/new_address?password=$main_password&second_password=$second_password&label=$label</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain wallet password</li>
+        <li><b>$second_password</b> Your second Blockchain Wallet password if double encryption is enabled.</li>
+        <li><b>$label</b> An optional label to attach to this address. It is recommended this is a human readable string e.g. "Order No : 1234". You May use this as a reference to check balance of an order (documented later)</li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{ "address" : "The Bitcoin Address Generated" , "label" : "The Address Label"}</pre>
+    <pre class="prettyprint">{ "address" : "18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy" , "label":  "Order No : 1234" }</pre>
+</div>
+<h2 class="page-header">Address Management</h2>
+<div class="page-header">
+    <h3>Archiving an address</h3>
+    <p>
+        To improve wallet performance addresses which have not been used recently should be moved to an archived state. They will still be held in the wallet but will no longer be included in the "list" or "list-transactions" calls.
+    </p>
+    <p>
+        For example if an invoice is generated for a user once that invoice is paid the address should be archived.
+    </p>
+    <p>
+        Or if a unique bitcoin address is generated for each user, users who have not logged in recently (~30 days) their addresses should be archived.
+    </p>
+    <p>
+        <b>http://localhost:3000/merchant/$guid/archive_address?password=$main_password&second_password=$second_password&address=$address</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain wallet password</li>
+        <li><b>$address</b> The bitcoin address to archive</li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{"archived" : "18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy"}</pre>
+</div>
+<div class="page-header">
+    <h3>Unarchive an address</h3>
+    <p>
+        Unarchive an address. Will also restore consolidated addresses (see below).
+    <p>
+        <b>http://localhost:3000/merchant/$guid/unarchive_address?password=$main_password&second_password=$second_password&address=$address</b>
+    </p>
+    <ul>
+        <li><b>$main_password</b> Your Main Blockchain wallet password</li>
+        <li><b>$address</b> The bitcoin address to unarchive</li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+    <pre class="prettyprint">{"active" : "18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy"}</pre>
+</div>
+</div>
+
+<div class="footer pt-30 pb-25 ph-10" data-symbol-local='{"symbol":"R$","code":"BRL","symbolAppearsAfter":false,"name":"Brazil Real","local":true,"conversion":5584.90734639}' data-symbol-btc='{"symbol":"BTC","code":"BTC","symbolAppearsAfter":true,"name":"Bitcoin","local":false,"conversion":100000000.00000000}'>
+      <div class="container">
+        <div class="row upper">
+          <div class="col-md-2">
+            <a href="https://www.blockchain.com/"><img src="../Resources/bc-name-and-logo-dark-blue61d9.svg?fa5a143c72f14f3f" alt="" style="width: 150px;"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Products</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Products</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="../wallet/%23/index.html" class="blue em-300 f-12 uppercase">Wallet</a></p>
+                <p><a href="index.html" class="blue em-300 f-12 uppercase">API</a></p>
+                <p><a href="https://www.blockchain.com/enterprise" class="blue em-300 f-12 uppercase">Business</a></p>
+                <p><a href="https://www.blockchain.com/thunder" class="blue em-300 f-12 uppercase">Thunder</a></p>
+                <p><a href="https://www.blockchain.com/research" class="blue em-300 f-12 uppercase">Research</a></p>
+                <p><a href="../index.html" class="blue em-300 f-12 uppercase">Explorer</a></p>
+                <p><a href="../charts.html" class="blue em-300 f-12 uppercase">Charts</a></p>
+                <p><a href="../markets/index.html" class="blue em-300 f-12 uppercase">Markets</a></p>
+                <p><a href="../stats.html" class="blue em-300 f-12 uppercase">Stats</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 right-align info-dropdowns visible-sm visible-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="blockchain_wallet_api85a2.html?show_adv=true" class="ml-5 blue">Enable</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Company</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Company</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="https://www.blockchain.com/about" class="blue em-300 f-12 uppercase">About</a></p>
+                <p><a href="https://www.blockchain.com/team" class="blue em-300 f-12 uppercase">Team</a></p>
+                <p><a href="https://www.blockchain.com/careers" class="blue em-300 f-12 uppercase">Careers</a></p>
+                <p><a href="https://www.blockchain.com/interview" class="blue em-300 f-12 uppercase">Interviewing</a></p>
+                <p><a href="https://www.blockchain.com/faq" class="blue em-300 f-12 uppercase">FAQ</a></p>
+                <p><a href="https://www.blockchain.com/press" class="blue em-300 f-12 uppercase">Press</a></p>
+                <p><a href="https://blog.blockchain.com/" class="blue em-300 f-12 uppercase">Blog</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Support</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Support</span>
+              </p>
+              <p><a href="https://support.blockchain.com/" class="blue em-300 f-12 uppercase">Help Center</a></p>
+              <p><a href="https://blog.blockchain.com/category/tutorials-and-guides/" class="blue em-300 f-12 uppercase">Tutorials</a></p>
+              <p><a href="../wallet/bitcoin-faq.html" class="blue em-300 f-12 uppercase">Learning Portal</a></p>
+            </div>
+            <div class="col-md-2 right-align hidden-sm hidden-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="blockchain_wallet_api85a2.html?show_adv=true" class="ml-5 blue em-300">Enable</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container type-sm flex-column-reverse-mobile flex-center">
+        <div class="col-md-8 col-sm-12 col-xs-12 pln pt-15">
+          <span class="medium-blue mbn upper f-10">
+            <span class="mrm em-300 blue">2017 Blockchain Luxembourg S.A. All Rights Reserved.</span>
+            <br class="visible-xs">
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/privacy">
+              Privacy
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/terms">
+              Terms
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/legal">
+              Law Enforcement Guide
+            </a>
+            <a class="blue light-bg legal-link" href="../advertise.html">
+              Advertise
+            </a>
+          </span>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 prn pt-15 right-align">
+          <a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android&amp;hl=en" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/android-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/apple-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.facebook.com/blockchain/" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/facebook-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.linkedin.com/company/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/linkedin-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://twitter.com/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/twitter-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+
+<!-- Mirrored from blockchain.info/api/blockchain_wallet_api by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:29:52 GMT -->
+</html>
