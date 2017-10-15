@@ -1,0 +1,475 @@
+.cta {
+  height: 300px; }
+  .cta button {
+    border-radius: 25px; }
+
+@media (max-width: 425px) {
+  .cta {
+    background-color: #f5f7f9; } }
+
+#explore-links p {
+  margin: 30px 0px;
+  color: #004a7c; }
+
+#explore-links a:first-child p {
+  margin-top: 0px;
+  padding-top: 15px; }
+
+#explore-links a:last-child p {
+  margin-bottom: 0px;
+  padding-bottom: 15px; }
+
+.arrow {
+  padding-bottom: 3px;
+  width: 13px; }
+
+.link-arrow {
+  width: 11px;
+  padding-bottom: 3px; }
+
+.next, .previous {
+  opacity: 0;
+  background-color: #f3f3f3;
+  width: 360px;
+  height: 105px; }
+
+.header {
+  background-size: cover;
+  min-height: 60vh; }
+  .header .explore-wrapper {
+    display: none; }
+  .header .title-text {
+    font-size: 42px; }
+  @media (max-width: 767px) {
+    .header {
+      background-position: 100%; }
+      .header .explore-wrapper {
+        display: flex; }
+      .header .title-text {
+        font-size: 30px;
+        padding-top: 0px; } }
+  @media (max-width: 425px) {
+    .header {
+      background-position: 100%;
+      min-height: 45vh; }
+      .header .sub-title {
+        font-weight: 200; }
+      .header .title-text {
+        margin-top: 50px; } }
+
+.bitcoin-basics .header {
+  background-image: url("../learning-portal/bitcoinforbeginnersheader.jpg");
+  min-height: 60vh;
+  background-position-y: 60%; }
+  .bitcoin-basics .header .arrow {
+    width: 13px; }
+  .bitcoin-basics .header .down-arrow {
+    width: 20px; }
+  @media (max-width: 767px) {
+    .bitcoin-basics .header .explore-wrapper {
+      display: flex; } }
+
+.bitcoin-basics .section-two .container div.flex-column img {
+  width: 100px; }
+
+.bitcoin-basics .section-two .container div.flex-column p {
+  color: #5f5f5f;
+  text-align: center;
+  width: 255px; }
+
+.bitcoin-basics .section-two .container div.flex-column:nth-of-type(even) {
+  margin-top: 55px; }
+
+@media (max-width: 991px) {
+  .bitcoin-basics .section-two .container div.flex-column {
+    margin: 15px 0px; }
+  .bitcoin-basics .section-two .container div.flex-column:nth-of-type(even) {
+    margin: 15px 0px; } }
+
+.bitcoin-basics .section-three .why-use-btc-mobile {
+  display: none; }
+
+.bitcoin-basics .section-three .favorites .col-md-5 {
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.46);
+  height: 130px;
+  width: 296px; }
+  .bitcoin-basics .section-three .favorites .col-md-5 div.center p {
+    top: 40px; }
+  .bitcoin-basics .section-three .favorites .col-md-5 .navy-circle {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    bottom: 95px;
+    right: 112px; }
+
+@media (min-width: 1514px) {
+  .bitcoin-basics .section-three .favorites .col-md-5 {
+    width: 400px; }
+    .bitcoin-basics .section-three .favorites .col-md-5 .navy-circle {
+      right: 163px; } }
+
+@media (min-width: 1827px) {
+  .bitcoin-basics .section-three .favorites .col-md-5 {
+    width: 580px; }
+    .bitcoin-basics .section-three .favorites .col-md-5 .navy-circle {
+      right: 250px; } }
+
+@media (min-width: 712px) and (max-width: 991px) {
+  .bitcoin-basics .section-three .favorites .col-md-5 {
+    margin: 0px 0px 70px 0px; }
+  .bitcoin-basics .section-three .favorites .col-md-5:nth-of-type(-n+2) {
+    margin-top: 50px; } }
+
+@media (max-width: 711px) {
+  .bitcoin-basics .section-three .favorites .col-md-5 {
+    margin: 0px 0px 70px 0px; }
+  .bitcoin-basics .section-three .favorites .col-md-5:nth-of-type(1) {
+    margin-top: 50px; }
+  .bitcoin-basics .section-three .favorites .col-md-5:nth-of-type(4) {
+    margin-bottom: 35px; } }
+
+@media (max-width: 650px) {
+  .bitcoin-basics .section-three .favorites {
+    padding: 0px; } }
+
+@media (max-width: 1218px) {
+  .bitcoin-basics .section-three .flex-column-mobile.flex-row.flex-justify {
+    flex-direction: column;
+    align-items: center; }
+  .bitcoin-basics .section-three .why-use-btc-img {
+    display: none; }
+  .bitcoin-basics .section-three .favorites {
+    width: 70%;
+    padding-bottom: 40px; }
+  .bitcoin-basics .section-three .why-use-btc {
+    align-items: center;
+    margin-left: 0px; }
+  .bitcoin-basics .section-three .manwoman {
+    display: block; } }
+
+@media (max-width: 930px) {
+  .bitcoin-basics .section-three .favorites {
+    width: 85%; } }
+
+@media (max-width: 425px) {
+  .bitcoin-basics .section-three .favorites {
+    padding-bottom: 0px; } }
+
+.using-your-wallet .offset-left {
+  margin-left: 40px; }
+
+@media (max-width: 1199px) {
+  .using-your-wallet .offset-left {
+    margin-left: 0px; } }
+
+.using-your-wallet .header {
+  background-image: url("../learning-portal/using-wallet-bg.jpg"); }
+  @media (max-width: 425px) {
+    .using-your-wallet .header {
+      background-position: 70%; } }
+
+.using-your-wallet .section-two .wallet-basics .wallet-view {
+  width: 335px; }
+  .using-your-wallet .section-two .wallet-basics .wallet-view .wallet-screen {
+    width: 225px;
+    height: 143px; }
+  .using-your-wallet .section-two .wallet-basics .wallet-view p:first-of-type {
+    padding: 20px 0px 10px 0px; }
+
+@media (max-width: 425px) {
+  .using-your-wallet .section-two .flex-center-mobile.flex-column.pv-70 {
+    padding-bottom: 30px; }
+  .using-your-wallet .section-two .wallet-view {
+    padding-bottom: 30px; } }
+
+@media (max-width: 1200px) and (min-width: 767px) {
+  .using-your-wallet .section-two .col-md-8 {
+    width: 100%;
+    justify-content: center; }
+  .using-your-wallet .section-two .wallet-view {
+    margin: 0px 0px; } }
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  .using-your-wallet .section-two .wallet-view {
+    margin: 0px 50px; } }
+
+.using-your-wallet .wallet-faq .faq {
+  border-bottom: 1px solid #d2ced0; }
+  .using-your-wallet .wallet-faq .faq .answer {
+    display: none; }
+
+.using-your-wallet .wallet-faq .faq:last-of-type {
+  border-bottom: none; }
+
+@media (max-width: 425px) {
+  .using-your-wallet .wallet-faq .faq {
+    margin: 0px 25px; }
+  .using-your-wallet .wallet-faq .answer {
+    font-weight: 200; } }
+
+@media (max-width: 1200px) and (min-width: 767px) {
+  .using-your-wallet .wallet-faq.col-md-4 {
+    width: 100%; } }
+
+.using-your-wallet .section-three {
+  min-height: 288px; }
+  .using-your-wallet .section-three .feature-img {
+    width: 50px;
+    height: 50px; }
+  .using-your-wallet .section-three .feature {
+    width: 320px;
+    padding-bottom: 58px; }
+  @media (max-width: 425px) {
+    .using-your-wallet .section-three .feature:nth-of-type(3) img.feature-img {
+      margin-right: 25px;
+      margin-left: 11px; } }
+
+.blockchain-on-mobile .offset-left {
+  margin-left: 60px; }
+
+@media (max-width: 991px) {
+  .blockchain-on-mobile .offset-left {
+    margin-left: 0px; } }
+
+.blockchain-on-mobile #ios-header {
+  background-image: url("../learning-portal/iosheader-compressor.jpg"); }
+
+.blockchain-on-mobile #android-header {
+  background-image: url("../learning-portal/androidheader-compressor.jpg"); }
+
+@media (max-width: 767px) {
+  .blockchain-on-mobile .header {
+    background-position: 35%; } }
+
+@media (max-width: 425px) {
+  .blockchain-on-mobile .header {
+    background-position: 60%; } }
+
+.blockchain-on-mobile .section-two .features {
+  width: 80%;
+  margin: 0 auto; }
+
+.blockchain-on-mobile .section-two .feature {
+  width: 235px;
+  margin: 0px 40px; }
+  .blockchain-on-mobile .section-two .feature img {
+    height: 234px;
+    width: 234px;
+    margin-bottom: 23px; }
+
+.blockchain-on-mobile .section-two .sub-features {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #d2ced0; }
+  .blockchain-on-mobile .section-two .sub-features img {
+    height: 25px;
+    width: 25px; }
+  .blockchain-on-mobile .section-two .sub-features .flex-row {
+    width: 185px; }
+    .blockchain-on-mobile .section-two .sub-features .flex-row span {
+      max-width: 150px; }
+  .blockchain-on-mobile .section-two .sub-features .flex-row:last-of-type {
+    margin-right: 0px; }
+
+@media (max-width: 1201px) and (min-width: 991px) {
+  .blockchain-on-mobile .section-two .feature {
+    margin: 0px 20px; }
+  .blockchain-on-mobile .section-two .sub-features {
+    width: 90%; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .blockchain-on-mobile .section-two .feature {
+    margin: 0px 10px; }
+  .blockchain-on-mobile .section-two .sub-features {
+    width: 100%; }
+    .blockchain-on-mobile .section-two .sub-features .flex-row {
+      margin: 0px 0px; } }
+
+@media (max-width: 767px) {
+  .blockchain-on-mobile .section-two .feature {
+    margin-bottom: 35px; }
+  .blockchain-on-mobile .section-two .sub-features .flex-row {
+    width: 240px;
+    margin: 0px 0px 20px 0px; } }
+
+.blockchain-on-mobile .mobile-faq .faq {
+  border-bottom: 1px solid #d2ced0;
+  display: none; }
+  .blockchain-on-mobile .mobile-faq .faq .answer {
+    padding-bottom: 25px; }
+
+.blockchain-on-mobile .mobile-faq .faq:last-of-type {
+  border-bottom: none; }
+
+@media (max-width: 425px) {
+  .blockchain-on-mobile .mobile-faq .faq {
+    margin: 0px 25px; }
+  .blockchain-on-mobile .mobile-faq .answer {
+    font-weight: 200; } }
+
+.wallet-security .offset-left {
+  margin-left: 60px; }
+
+@media (max-width: 991px) {
+  .wallet-security .offset-left {
+    margin-left: 0px; } }
+
+.wallet-security .header {
+  background-image: url("../learning-portal/header-compressor.jpg"); }
+  @media (max-width: 767px) {
+    .wallet-security .header {
+      background-position: 35%; } }
+
+.wallet-security .section-two .step {
+  width: 345px; }
+
+.wallet-security .section-two .step-img {
+  height: 50px;
+  width: 28px; }
+
+@media (max-width: 767px) {
+  .wallet-security .section-two .step {
+    margin: 0px 0px 30px 0px; }
+  .wallet-security .section-two .step:first-of-type {
+    margin-right: 23px; } }
+
+.wallet-security .section-three .card {
+  border: 1px solid #ffffff;
+  padding: 16px 20px;
+  width: 345px;
+  margin: 10px; }
+
+.wallet-security .section-three .card:nth-of-type(odd) {
+  margin-left: 0px; }
+
+.wallet-security .section-three .card:nth-of-type(even) {
+  margin-right: 0px; }
+
+.wallet-security .section-three .backup-img {
+  width: 437px;
+  height: 380px; }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .wallet-security .section-three .pv-30 {
+    margin-left: 20px; }
+  .wallet-security .section-three .cards {
+    justify-content: center; }
+  .wallet-security .section-three .card {
+    margin: 5px;
+    width: 300px; }
+  .wallet-security .section-three .backup-img {
+    width: 347px;
+    height: 280px; } }
+
+@media (max-width: 767px) {
+  .wallet-security .section-three .card {
+    margin: 12px 0px; } }
+
+@media (max-width: 767px) {
+  .wallet-security .section-three .card {
+    margin: 10px 0px;
+    width: 300px; } }
+
+.wallet-security .security-faq .faq {
+  border-bottom: 1px solid #d2ced0; }
+  .wallet-security .security-faq .faq .answer {
+    display: none; }
+
+.wallet-security .security-faq .faq:last-of-type {
+  border-bottom: none; }
+
+@media (max-width: 425px) {
+  .wallet-security .security-faq .faq {
+    margin: 0px 25px; }
+  .wallet-security .security-faq .answer {
+    font-weight: 200; } }
+
+.how-to-get-bitcoins .offset-left {
+  margin-left: 60px; }
+
+@media (max-width: 991px) {
+  .how-to-get-bitcoins .offset-left {
+    margin-left: 0px; } }
+
+.how-to-get-bitcoins .header {
+  background-image: url("../learning-portal/how-to-get-header.jpg"); }
+
+.how-to-get-bitcoins .section-two .buy-step {
+  width: 295px; }
+
+.how-to-get-bitcoins .section-two .right-arrow {
+  padding-bottom: 95px; }
+
+.how-to-get-bitcoins .section-two .right-arrow-eth {
+  padding-top: 40px; }
+
+.how-to-get-bitcoins .section-two .buy-img-wrapper {
+  height: 110px; }
+
+@media (max-width: 1199px) and (min-width: 991px) {
+  .how-to-get-bitcoins .section-two .right-arrow {
+    padding-bottom: 180px; }
+  .how-to-get-bitcoins .section-two .right-arrow-eth {
+    padding-top: 0px; } }
+
+@media (max-width: 991px) {
+  .how-to-get-bitcoins .section-two .right-arrow {
+    display: none; }
+  .how-to-get-bitcoins .section-two .right-arrow-eth {
+    display: none; }
+  .how-to-get-bitcoins .section-two .buy-step {
+    margin-right: 15px; }
+  .how-to-get-bitcoins .section-two .buy-step:last-of-type {
+    margin-right: 0px; } }
+
+@media (max-width: 767px) {
+  .how-to-get-bitcoins .section-two .center-mobile.mb-55 {
+    margin-bottom: 0px; }
+  .how-to-get-bitcoins .section-two .buy-step {
+    margin: 30px 0px 0px 0px;
+    width: 350px; }
+  .how-to-get-bitcoins .section-two .step:first-of-type {
+    margin-right: 23px; }
+  .how-to-get-bitcoins .section-two .buy-img-wrapper {
+    margin-bottom: 20px; }
+  .how-to-get-bitcoins .section-two .flex-column.pt-75.offset-left {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 30px;
+    width: 55%;
+    border-top: 1px solid #d2ced0; } }
+
+@media (max-width: 425px) {
+  .how-to-get-bitcoins .section-two .flex-column.pt-75.offset-left {
+    width: 90%; } }
+
+.how-it-works .offset-left {
+  margin-left: 60px; }
+
+@media (max-width: 991px) {
+  .how-it-works .offset-left {
+    margin-left: 0px; } }
+
+.how-it-works .header {
+  background-image: url("../learning-portal/how-your-wallet-works-header.jpg"); }
+
+@media (max-width: 768px) {
+  .how-it-works .how-it-works-main .point {
+    width: 550px; } }
+
+@media (max-width: 425px) {
+  .how-it-works .how-it-works-main .point {
+    width: 304px; } }
+
+@media (max-width: 767px) {
+  .how-it-works .gtk p {
+    width: 550px; } }
+
+@media (max-width: 425px) {
+  .how-it-works .gtk p {
+    width: 304px; } }
+
+@media (max-width: 768px) {
+  .how-it-works .how-it-works-main {
+    margin-bottom: 50px; } }

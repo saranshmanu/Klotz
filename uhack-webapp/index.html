@@ -1,0 +1,168 @@
+<!DOCTYPE html><html>
+<head>
+    <title>The ultimate wallet - Klotz</title>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="Resources/overrides.min61d9.css">
+<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAIqHEY2BkgjCXdvioqd8cIMvjaLXsJrHs",
+    authDomain: "push-notifications-cb68c.firebaseapp.com",
+    databaseURL: "https://push-notifications-cb68c.firebaseio.com",
+    projectId: "push-notifications-cb68c",
+    storageBucket: "push-notifications-cb68c.appspot.com",
+    messagingSenderId: "433987706595"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="Resources/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="Resources/js/bootstrap.min61d9.js"></script>
+<script src="Resources/js/shared.min61d9.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script src='Resources/analytics.js'></script>
+<script src='Resources/js/navbar-analytics61d9.js'></script>
+<link rel="stylesheet" href="Resources/css/normalize.css">
+
+    <script type="text/javascript" src="Resources/charts/highcharts.js"></script>
+    <script type="text/javascript" src="Resources/slick.min.js"></script>
+    
+    <META NAME="Description" CONTENT="Discover the world's most popular Block wallet. View detailed information and charts on all Block transactions and blocks. Visit today.">
+    <link rel="canonical" href="index.html">
+    <link rel="stylesheet" href="Resources/css/normalize.css">
+</head>
+<body class="opaque-nav" id="home-container" style="background: #000">
+
+
+  <nav role="navigation" style="height: 10%">
+    <ul class="igation">
+      <li>
+        <a class="bc-logo" href="https://www.blockchain.com/">
+          <img src="Resources/img/blacklogo.png" alt="Klots wallet and oneBlock" /><span style="color: black">Klotz.</span>
+        </a>
+        <button class="menu-button">
+          <span></span>
+        </button>
+        <button class="search-button" type="button"></button>
+      </li>
+      <li class="flex-space"></li>
+  </nav>
+  
+  <div class="container pt-100">
+    
+     <div class="flex-row flex-center flex-between upper em-500 mt-20 mb-15">
+      <span class="f-24" style="color: rgb(136,203,97)">Latest Blocks</span>
+      <a class="f-16" href="#"><b class="flex-center mr-5" style="color: rgb(136,203,97)">See more <i class="icon-right_arrow ml-10"></i></b></a>
+    </div>
+    <div class="row-fluid row">
+        <div class="col-md-12">
+            <table class="table table-striped" id="" >
+                <thead>
+                    <th>From</th>
+                    <th>To</th>
+                    <th class="hidden-xs">Amount</th>
+                    <th class="hidden-xs">Date</th>
+                    <th class="hidden-xs">Time</th>
+                </thead>
+                <tbody id="blockTransaction">
+                  
+                </tbody>
+
+                <hr>
+            </table>
+        </div>
+    </div>
+    <div class="row-fluid row pv-55 flex-row flex-column flex-column-reverse-mobile">
+      <div class="col-md-6 col-sm-6">
+        <div class="flex-column pt-25 pr-30 flex-between height-100">
+          <span class="f-24 upper em-500 mb-10" style="color: rgb(136,203,97)">New To Digital Currencies?</span>
+          <p class="f-14 mb-15">Like paper money and gold before it, Block and ether allow parties to exchange value. Unlike their predecessors, they are digital and decentralized. For the first time in history, people can exchange value without intermediaries which translates to greater control of funds and lower fees.</p>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pv-55">
+    <div class="container">
+      <div class="row-fluid row flex-row flex-column flex-column-reverse-mobile">
+        <div class="col-md-6 col-sm-6">
+          <div class="flex-column">
+            <span class="f-24 upper em-500 mb-10" style="color: rgb(136,203,97)">Transactions Per Day</span>
+            <p class="f-16 em-300 mb-30">The number of Block transactions in the last 24 hours.</p>
+            <div id="counters" class="flex-row invisible" style="color: #afffc8"></div>
+            <p class="f-14 em-300 mt-15">Transactions since <span id="yesterday"></span>.</p>
+            <div class="visible-xs mt-50 mbn border-break"></div>
+            <div class="mt-50 center-mobile">
+              <span class="f-24 em-500 flex flex-column-reverse-mobile"><span class="upper">Market Cap<span class="hidden-xs">:</span></span> <a class="market-cap ml-5" href="charts/market-cap.html"></a></span>
+            </div>
+            <div class="visible-xs mt-50 mb-15 border-break"></div>
+            <div class="mt-35 center-mobile">
+              <span class="f-24 em-500 flex flex-column-reverse-mobile"><span class="upper">Hash Rate<span class="hidden-xs">:</span></span> <a class="hash-rate ml-5" href="charts/hash-rate.html"></a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-xs mv-50 border-break"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="flex-column">
+            <span class="f-24 upper em-500 mb-10">1 BTC = $<span class="exchange-rate"></span></span>
+            <a class="f-14 em-600 flex-center" href="charts/market-price.html">Interactive Chart <i class="icon-right_arrow ml-10"></i></a>
+            <div id="price-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer pt-30 pb-25 ph-10">
+       <div class="container type-sm flex-column-reverse-mobile flex-center">
+        <div class="col-md-8 col-sm-12 col-xs-12 pln pt-15">
+          <span class="medium-blue mbn upper f-10">
+            <span class="mrm em-300 blue">2017 TrueMe. All Rights Reserved.</span>
+            <br class="visible-xs">
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/privacy">
+              Privacy
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/terms">
+              Terms
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/legal">
+              Law Enforcement Guide
+            </a>
+            <a class="blue light-bg legal-link" href="advertise.html">
+              Advertise
+            </a>
+          </span>
+        </div>
+
+       <!-- <div class="col-md-4 col-sm-12 col-xs-12 prn pt-15 right-align">
+          <a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android&amp;hl=en" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="Resources/android-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://itunes.apple.com/us/app/blockchain-Block-wallet/id493253309?mt=8" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="Resources/apple-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.facebook.com/blockchain/" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="Resources/facebook-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.linkedin.com/company/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="Resources/linkedin-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://twitter.com/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="Resources/twitter-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+        </div> -->
+      </div>
+    </div>
+    
+<script type="text/javascript" src="Resources/js/firebase.js"></script>
+<script type="text/javascript" src="Resources/js/homepage.min61d9.js"></script>
+
+</body>
+</html>

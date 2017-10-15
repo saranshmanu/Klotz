@@ -1,0 +1,579 @@
+
+
+
+<!DOCTYPE html><html>
+<!-- Mirrored from blockchain.info/api/charts_api by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:30:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Bitcoin Charts API: Bitcoin Market Data API - Blockchain</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" href="../Resources/overrides.min61d9.css?fa5a143c72f14f3f"><script src="../Resources/js/jquery.min.js" type="text/javascript"></script><script type="text/javascript" src="../Resources/js/bootstrap.min61d9.js?fa5a143c72f14f3f"></script><script src="../Resources/js/shared.min61d9.js?fa5a143c72f14f3f" type="text/javascript"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script src='../Resources/analytics.js'></script>
+<script src='../Resources/js/navbar-analytics61d9.js?fa5a143c72f14f3f'></script>
+<link rel="stylesheet" href="../Resources/css/blockchain61d9.css?fa5a143c72f14f3f">
+
+
+    <link rel="alternate" hreflang="en" href="charts_api.html">
+    
+        
+            <link rel="alternate" hreflang="id" href="../id/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ms" href="../ms/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="da" href="../da/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="de" href="../de/api/charts_api.html">
+        
+    
+        
+    
+        
+            <link rel="alternate" hreflang="es" href="../es/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fr" href="../fr/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="it" href="../it/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hu" href="../hu/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="nl" href="../nl/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="no" href="../no/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pl" href="../pl/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="pt" href="../pt/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ro" href="../ro/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sl" href="../sl/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="fi" href="../fi/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="sv" href="../sv/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="vi" href="../vi/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="tr" href="../tr/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="el" href="../el/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ru" href="../ru/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="bg" href="../bg/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="hi" href="../hi/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="th" href="../th/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-cn" href="../zh-cn/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="zh-tw" href="../zh-tw/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ja" href="../ja/api/charts_api.html">
+        
+    
+        
+            <link rel="alternate" hreflang="ko" href="../ko/api/charts_api.html">
+        
+    
+
+
+<link href="../Resources/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../Resources/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="../Resources/js/pretty-print.js"></script>
+<meta name="description" content="Create your own live charts with our Bitcoin charts and statistics API. Get access to live Bitcoin data with the Blockchain API today.">
+</head>
+<body class="opaque-nav">
+
+
+  <nav role="navigation">
+    <ul class="igation">
+      <li>
+        <a class="bc-logo" href="https://www.blockchain.com/">
+          <img src="../Resources/white-blockchain61d9.svg?fa5a143c72f14f3f" alt="Bitcoin block explorer and currency statistics" />
+        </a>
+        <button class="menu-button">
+          <span></span>
+        </button>
+        <button class="search-button" type="button"></button>
+      </li>
+      <li class="with-children">
+        <a href="../wallet/%23/index.html" id="wallet-link">Wallet</a>
+        <ul>
+          <li><a href="../wallet/%23/index.html#/login">Login</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../index.html">Data</a>
+        <ul>
+          <li><a href="../charts.html">Charts</a></li>
+          <li><a href="../stats.html">Stats</a></li>
+          <li><a href="../markets/index.html">Markets</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="../api.html">API</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/enterprise">Business</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/about">About</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/team">Team</a></li>
+          <li><a href="https://www.blockchain.com/careers">Careers</a></li>
+          <li><a href="https://www.blockchain.com/press">Press</a></li>
+          <li><a href="https://blog.blockchain.com/">Blog</a></li>
+        </ul>
+      </li>
+      <li class="flex-space"></li>
+      <li>
+        <form action="https://blockchain.info/search" class="search-form" method="GET">
+          <input class="search-bar" name="search" placeholder="block, hash, transaction, etc..." type="text" />
+        </form>
+      </li>
+      <li>
+        <a class="wallet-button" href="../wallet/%23/index.html#/signup" target="_blank">Get A Free Wallet</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+
+<div class="container pt-90">
+    <div class="page-header">
+        <h1>Blockchain Charts &amp; Statistics API</h1>
+    </div>
+<p class="well">
+    The Blockchain Charts &amp; Statistics API provides a simple interface to programmatically interact with the charts and statistics displayed on blockchain.info.
+</p>
+<h2>Preamble</h2>
+<p>
+Date parameters are represented as YYYY-MM-DDThh:mm:ss or YYYY-MM-DD. The timezone is UTC. Durations are represented by concatenating the number of time units and the time unit it represents (for example '1year', '3months', etc..).
+Available time units are: minute, hour, day, week and year.
+</p>
+<div class="page-header">
+    <h3>
+        Charts API <small>Get the data behind Blockchain's charts</small>
+    </h3>
+    <p>
+        This method can be used to get and manipulate data behind <a href="../charts.html">all Blockchain.info's charts.</a>
+    </p>
+    <p>
+        <b>URL:</b> https://api.blockchain.info/charts/$chartName?timespan=$timespan&amp;rollingAverage=$rollingAverage&amp;start=$start&amp;format=$format&amp;sampled=$sampled</br>
+        <b>Method:</b> GET</br>
+        <b>Example:</b> <a href="https://api.blockchain.info/charts/transactions-per-second?timespan=5weeks&amp;rollingAverage=8hours&amp;format=json">https://api.blockchain.info/charts/transactions-per-second?timespan=5weeks&amp;rollingAverage=8hours&amp;format=json</a>
+    </p>
+    <ul>
+        <li><b>$timespan</b> <font color="grey">Duration of the chart, default is 1 year for most charts, 1 week for mempool charts. (Optional)</font></li>
+        <li><b>$rollingAverage</b> <font color="grey">Duration over which the data should be averaged. (Optional)</font></li>
+        <li><b>$start</b> <font color="grey">Datetime at which to start the chart. (Optional)</font></li>
+        <li><b>$format</b> <font color="grey">Either JSON or CSV, defaults to JSON. (Optional)</font></li>
+        <li><b>$sampled</b> <font color="grey">Boolean set to 'true' or 'false' (default 'true'). If true, limits the number of datapoints returned to ~1.5k for performance reasons. (Optional)</font></li>
+    </ul>
+    <p>Please note that values for charts can be represented in scientific notation (14,627,700 is represented as 1.46277E7)</p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+  "status": "ok",
+  "name": "Confirmed Transactions Per Day",
+  "unit": "Transactions",
+  "period": "day",
+  "description": "The number of daily confirmed Bitcoin transactions.",
+  "values": [
+    {
+      "x": 1442534400, // Unix timestamp (2015-09-18T00:00:00+00:00)
+      "y": 188330.0
+    },
+    ...
+}
+</pre>
+    <h6>Response: <small>200 OK, text/csv; charset=ascii</small></h6>
+<pre class="prettyprint">
+2015-09-18 00:00:00,188330.0
+2015-09-19 00:00:00,117999.0
+2015-09-20 00:00:00,105933.0
+</pre>
+    </div>
+    <div class="page-header">
+    <h3>
+        Stats API <small>Get the data behind Blockchain's stats</small>
+    </h3>
+    <p>
+        This method can be used to get the data behind <a href="../stats.html">Blockchain.info's stats.</a>
+    </p>
+    <p>
+        <b>URL:</b> https://api.blockchain.info/stats</br>
+        <b>Method:</b> GET</br>
+        <b>Example:</b> <a href="https://api.blockchain.info/stats">https://api.blockchain.info/stats</a>
+    </p>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+  "market_price_usd": 610.036975,
+  "hash_rate": 1.8410989266292908E9,
+  "total_fees_btc": 6073543165,
+  "n_btc_mined": 205000000000,
+  "n_tx": 233805,
+  "n_blocks_mined": 164,
+  "minutes_between_blocks": 8.2577,
+  "totalbc": 1587622500000000,
+  "n_blocks_total": 430098,
+  "estimated_transaction_volume_usd": 1.2342976868108143E8,
+  "blocks_size": 117490685,
+  "miners_revenue_usd": 1287626.6577490852,
+  "nextretarget": 431423,
+  "difficulty": 225832872179,
+  "estimated_btc_sent": 20233161880242,
+  "miners_revenue_btc": 2110,
+  "total_btc_sent": 184646388663542,
+  "trade_volume_btc": 21597.09997288,
+  "trade_volume_usd": 1.3175029536228297E7,
+  "timestamp": 1474035340000
+}
+</pre>
+    </div>
+        <div class="page-header">
+    <h3>
+        Pools API <small>Get the data behind Blockchain's pools information</small>
+    </h3>
+    <p>
+        This method can be used to get the data behind <a href="../pools">Blockchain.info's pools information.</a>
+    </p>
+    <p>
+        <b>URL:</b> https://api.blockchain.info/pools?timespan=$timespan</br>
+        <b>Method:</b> GET</br>
+        <b>Example:</b> <a href="https://api.blockchain.info/pools?timespan=5days">https://api.blockchain.info/pools?timespan=5days</a>
+    </p>
+    <ul>
+        <li><b>$timespan</b> <font color="grey">Duration over which the data is computed, maximum 10 days, default is 4 days. (Optional)</font></li>
+    </ul>
+    <h6>Response: <small>200 OK, application/json</small></h6>
+<pre class="prettyprint">
+{
+  "GHash.IO": 7,
+  "95.128.48.209": 1,
+  "NiceHash Solo": 1,
+  "Solo CKPool": 2,
+  "176.9.31.178": 1,
+  "1Hash": 11,
+  "217.11.225.189": 1,
+  "Unknown": 10,
+  "BitClub Network": 23,
+  "Telco 214": 5,
+  "HaoBTC": 29,
+  "GBMiners": 2,
+  "SlushPool": 44,
+  "91.220.131.39": 1,
+  "Kano CKPool": 13,
+  "BTCC Pool": 74,
+  "60.205.107.55": 1,
+  "BitMinter": 1,
+  "BitFury": 58,
+  "AntPool": 87,
+  "F2Pool": 104,
+  "ViaBTC": 54,
+  "BW.COM": 77,
+  "BTC.com": 2,
+  "47.89.51.25": 1,
+  "74.118.157.122": 2
+}
+</pre>
+    </div>
+</div>
+
+<div class="footer pt-30 pb-25 ph-10" data-symbol-local='{"symbol":"R$","code":"BRL","symbolAppearsAfter":false,"name":"Brazil Real","local":true,"conversion":5584.90734639}' data-symbol-btc='{"symbol":"BTC","code":"BTC","symbolAppearsAfter":true,"name":"Bitcoin","local":false,"conversion":100000000.00000000}'>
+      <div class="container">
+        <div class="row upper">
+          <div class="col-md-2">
+            <a href="https://www.blockchain.com/"><img src="../Resources/bc-name-and-logo-dark-blue61d9.svg?fa5a143c72f14f3f" alt="" style="width: 150px;"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Products</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Products</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="../wallet/%23/index.html" class="blue em-300 f-12 uppercase">Wallet</a></p>
+                <p><a href="index.html" class="blue em-300 f-12 uppercase">API</a></p>
+                <p><a href="https://www.blockchain.com/enterprise" class="blue em-300 f-12 uppercase">Business</a></p>
+                <p><a href="https://www.blockchain.com/thunder" class="blue em-300 f-12 uppercase">Thunder</a></p>
+                <p><a href="https://www.blockchain.com/research" class="blue em-300 f-12 uppercase">Research</a></p>
+                <p><a href="../index.html" class="blue em-300 f-12 uppercase">Explorer</a></p>
+                <p><a href="../charts.html" class="blue em-300 f-12 uppercase">Charts</a></p>
+                <p><a href="../markets/index.html" class="blue em-300 f-12 uppercase">Markets</a></p>
+                <p><a href="../stats.html" class="blue em-300 f-12 uppercase">Stats</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 right-align info-dropdowns visible-sm visible-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow blue f-8"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="charts_api85a2.html?show_adv=true" class="ml-5 blue">Enable</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 no-margin-mobile">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Company</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Company</span>
+              </p>
+              <div class="flex-column footer-links flex-wrap">
+                <p><a href="https://www.blockchain.com/about" class="blue em-300 f-12 uppercase">About</a></p>
+                <p><a href="https://www.blockchain.com/team" class="blue em-300 f-12 uppercase">Team</a></p>
+                <p><a href="https://www.blockchain.com/careers" class="blue em-300 f-12 uppercase">Careers</a></p>
+                <p><a href="https://www.blockchain.com/interview" class="blue em-300 f-12 uppercase">Interviewing</a></p>
+                <p><a href="https://www.blockchain.com/faq" class="blue em-300 f-12 uppercase">FAQ</a></p>
+                <p><a href="https://www.blockchain.com/press" class="blue em-300 f-12 uppercase">Press</a></p>
+                <p><a href="https://blog.blockchain.com/" class="blue em-300 f-12 uppercase">Blog</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+              <p class="blue uppercase em-600 f-12 underline-blue visible-lg visible-md">Support</p>
+              <p class="blue uppercase em-600 f-12 visible-sm visible-xs">
+                <span class="underline-blue">Support</span>
+              </p>
+              <p><a href="https://support.blockchain.com/" class="blue em-300 f-12 uppercase">Help Center</a></p>
+              <p><a href="https://blog.blockchain.com/category/tutorials-and-guides/" class="blue em-300 f-12 uppercase">Tutorials</a></p>
+              <p><a href="../wallet/bitcoin-faq.html" class="blue em-300 f-12 uppercase">Learning Portal</a></p>
+            </div>
+            <div class="col-md-2 right-align hidden-sm hidden-xs">
+              <div class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="upper blue f-12">English</span>
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right languages_select" style="min-width:20px">
+                  <li><a tabindex="-1" href="../id.html" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li><li><a tabindex="-1" href="../ms.html" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li><li><a tabindex="-1" href="../da.html" data-code="da" title="Danish"><span>Dansk</span></a></li><li><a tabindex="-1" href="../de.html" data-code="de" title="German"><span>Deutsch</span></a></li><li><a tabindex="-1" href="../en.html" data-code="en" title="English"><span>English</span></a></li><li><a tabindex="-1" href="../es.html" data-code="es" title="Spanish"><span>Español</span></a></li><li><a tabindex="-1" href="../fr.html" data-code="fr" title="French"><span>Français</span></a></li><li><a tabindex="-1" href="../it.html" data-code="it" title="Italian"><span>Italiano</span></a></li><li><a tabindex="-1" href="../hu.html" data-code="hu" title="Hungarian"><span>Magyar</span></a></li><li><a tabindex="-1" href="../nl.html" data-code="nl" title="Dutch"><span>Nederlands</span></a></li><li><a tabindex="-1" href="../no.html" data-code="no" title="Norwegian"><span>Norsk</span></a></li><li><a tabindex="-1" href="../pl" data-code="pl" title="Polish"><span>Polski</span></a></li><li><a tabindex="-1" href="../pt.html" data-code="pt" title="Portuguese"><span>Português</span></a></li><li><a tabindex="-1" href="../ro.html" data-code="ro" title="Romanian"><span>Română</span></a></li><li><a tabindex="-1" href="../sl" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li><li><a tabindex="-1" href="../fi.html" data-code="fi" title="Finnish"><span>Suomi</span></a></li><li><a tabindex="-1" href="../sv.html" data-code="sv" title="Swedish"><span>Svenska</span></a></li><li><a tabindex="-1" href="../vi.html" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li><li><a tabindex="-1" href="../tr.html" data-code="tr" title="Turkish"><span>Türkçe</span></a></li><li><a tabindex="-1" href="../el.html" data-code="el" title="Greek"><span>Ελληνικά</span></a></li><li><a tabindex="-1" href="../ru.html" data-code="ru" title="Russian"><span>Русский</span></a></li><li><a tabindex="-1" href="../bg" data-code="bg" title="Bulgarian"><span>български език</span></a></li><li><a tabindex="-1" href="../hi.html" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li><li><a tabindex="-1" href="../th.html" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li><li><a tabindex="-1" href="../zh-cn.html" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li><li><a tabindex="-1" href="../zh-tw.html" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li><li><a tabindex="-1" href="../ja" data-code="ja" title="Japanese"><span>日本語</span></a></li><li><a tabindex="-1" href="../ko.html" data-code="ko" title="Korean"><span>한국어</span></a></li>
+                </ul>
+              </div>
+              <div class="dropup mt-40">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <span class="upper blue f-12" id="current-currency">Brazil Real</span>
+                    
+                  
+                  <i class="icon-down_arrow f-8 blue"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right currencies" style="min-width:20px">
+                  <li value="CHF"><a href="../index25cb.html?currency=CHF" data-currency="CHF" >Swiss Franc</a></li><li value="CLP"><a href="../indexf8ea.html?currency=CLP" data-currency="CLP" >Chilean Peso</a></li><li value="INR"><a href="../index8c9b.html?currency=INR" data-currency="INR" >Indian Rupee</a></li><li value="MBC"><a href="../index1667.html?currency=MBC" data-currency="MBC" >MilliBit (mBTC)</a></li><li value="CNY"><a href="../indexd102.html?currency=CNY" data-currency="CNY" >Chinese yuan</a></li><li value="THB"><a href="../indexcbb0.html?currency=THB" data-currency="THB" >Thai baht</a></li><li value="AUD"><a href="../index741e.html?currency=AUD" data-currency="AUD" >Australian Dollar</a></li><li value="KRW"><a href="../index054a.html?currency=KRW" data-currency="KRW" >South Korean Won</a></li><li value="JPY"><a href="../index6a8b.html?currency=JPY" data-currency="JPY" >Japanese Yen</a></li><li value="PLN"><a href="../indexdc8f.html?currency=PLN" data-currency="PLN" >Polish Zloty</a></li><li value="GBP"><a href="../indexbfa2.html?currency=GBP" data-currency="GBP" >Great British Pound</a></li><li value="UBC"><a href="../index3558.html?currency=UBC" data-currency="UBC" >Bits (uBTC)</a></li><li value="RUB"><a href="../index15d7.html?currency=RUB" data-currency="RUB" >Russian Ruble</a></li><li value="ISK"><a href="../indexe023.html?currency=ISK" data-currency="ISK" >Icelandic Króna</a></li><li value="HKD"><a href="../indexee1a.html?currency=HKD" data-currency="HKD" >Hong Kong Dollar</a></li><li value="TWD"><a href="../index9038.html?currency=TWD" data-currency="TWD" >New Taiwan dollar</a></li><li value="EUR"><a href="../indexde9d.html?currency=EUR" data-currency="EUR" >Euro</a></li><li value="DKK"><a href="../index8e83.html?currency=DKK" data-currency="DKK" >Danish Krone</a></li><li value="USD"><a href="../index0307.html?currency=USD" data-currency="USD" >U.S. dollar</a></li><li value="CAD"><a href="../index06e8.html?currency=CAD" data-currency="CAD" >Canadian Dollar</a></li><li value="BTC"><a href="../index60f9.html?currency=BTC" data-currency="BTC" >Bitcoin</a></li><li value="SGD"><a href="../index02fd.html?currency=SGD" data-currency="SGD" >Singapore Dollar</a></li><li value="SEK"><a href="../index5d1e.html?currency=SEK" data-currency="SEK" >Swedish Krona</a></li><li value="NZD"><a href="../index8f22.html?currency=NZD" data-currency="NZD" >New Zealand Dollar</a></li><li value="BRL"><a href="../index3a16.html?currency=BRL" data-currency="BRL" >Brazil Real</a></li>
+                </ul>
+              </div>
+              <div class="upper f-12 mt-40">
+                <span class="blue em-600 colon">Advanced view</span> <a href="charts_api85a2.html?show_adv=true" class="ml-5 blue em-300">Enable</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container type-sm flex-column-reverse-mobile flex-center">
+        <div class="col-md-8 col-sm-12 col-xs-12 pln pt-15">
+          <span class="medium-blue mbn upper f-10">
+            <span class="mrm em-300 blue">2017 Blockchain Luxembourg S.A. All Rights Reserved.</span>
+            <br class="visible-xs">
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/privacy">
+              Privacy
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/terms">
+              Terms
+            </a>
+            <a class="blue light-bg mrm legal-link" href="https://blockchain.com/legal">
+              Law Enforcement Guide
+            </a>
+            <a class="blue light-bg legal-link" href="../advertise.html">
+              Advertise
+            </a>
+          </span>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 prn pt-15 right-align">
+          <a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android&amp;hl=en" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/android-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/apple-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.facebook.com/blockchain/" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/facebook-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://www.linkedin.com/company/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/linkedin-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+          <a href="https://twitter.com/blockchain" target="_blank" rel="noreferrer nofollow">
+            <img class="social-logo mlm" src="../Resources/twitter-footer-logo61d9.svg?fa5a143c72f14f3f" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+
+<!-- Mirrored from blockchain.info/api/charts_api by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2017 14:30:56 GMT -->
+</html>
